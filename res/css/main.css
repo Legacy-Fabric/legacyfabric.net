@@ -1,4 +1,92 @@
-.body-dark {
+body {
     background-color: #34373b;
+    color: #e0e0e0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-align: center;
 }
 
+/* General */
+
+.page-content a {
+    color: #3a8af2;
+    text-decoration: none;
+}
+
+.page-content a:visited {
+    color: #2a7ae2;
+}
+
+.page-content a:hover {
+    text-decoration: revert;
+}
+
+/* Navbar */
+
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: #212529;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+nav a {
+    color: #abafcc;
+    text-decoration: none;
+    padding: 7px;
+    transition-duration: 0.25s;
+}
+
+nav a:hover {
+    color: #d0d0d0;
+}
+
+nav a.main-nav {
+    color: #e7e7e7;
+    font: 22px system-ui;
+    padding-right: 15px;
+}
+
+nav a.main-nav:hover {
+    color: #ffffff;
+    text-shadow: 0 0 6px #aaa;
+}
+
+nav img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Gallery */
+
+.gallery {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+}
+
+.gallery-prev, .gallery-next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    font-weight: bold;
+    font-size: 20px;
+    transition-duration: 0.25s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.gallery-prev:hover, .gallery-next:hover {
+    color: #ffffff;
+}
+
+.gallery-prev {
+    left: 12px;
+}
+
+.gallery-next {
+    right: 12px;
+}
