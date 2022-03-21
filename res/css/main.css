@@ -59,34 +59,3 @@ nav img {
     display: inline-block;
     vertical-align: top;
 }
-
-/* Gallery */
-
-.gallery {
-    display: inline-block;
-    position: relative;
-    margin: auto;
-}
-
-.gallery-prev, .gallery-next {
-    cursor: pointer;
-    position: absolute;
-    top: 45%;
-    font-weight: bold;
-    font-size: 20px;
-    transition-duration: 0.25s;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.gallery-prev:hover, .gallery-next:hover {
-    color: #ffffff;
-}
-
-.gallery-prev {
-    left: 12px;
-}
-
-.gallery-next {
-    right: 12px;
-}
