@@ -2,84 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Legacy Fabric - Home</title>
+
+    <meta property="og:site_name" content="Legacy Fabric - Home">
+    <meta property="og:title" content="Legacy Fabric">
+    <meta property="og:url" content="https://legacyfabric.net/">
+    <meta property="og:image" content="https://legacyfabric.net/res/img/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:description" content="The home of legacy version support for Fabric.">
+
     <link href="res/css/main.css" type="text/css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-            crossorigin="anonymous"></script>
-    <title>Legacy Fabric | Home of supporting fabric on older versions.</title>
+    <link href="res/css/index.css" type="text/css" rel="stylesheet">
 </head>
-<body class="body-dark text-white">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="https://legacyfabric.net/">
-                <img src="res/img/logo.png" alt="" width="32" height="32" class="d-inline-block align-top">
-                Legacy Fabric
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="download">Download</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="wiki">Wiki</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="https://github.com/Legacy-Fabric/">Source</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="https://legacyfabric.net/discord">Discord</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<body>
+    <nav>
+        <a class="main-nav" href="/">
+            <img src="res/img/logo.png" alt="" width="32" height="32">
+            Legacy Fabric
+        </a>
+        <a href="/downloads.html">Downloads</a>
+        <a href="/wiki.html">Wiki</a>
+        <a href="https://github.com/Legacy-Fabric/">Source</a>
+        <a href="/discord">Discord</a>
     </nav>
-    <!--    abuse <br> because i am bad-->
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="text-center">
-        <h1>The home of legacy version support for fabric</h1>
-        <div class="card-body">
-            <p>Legacy fabric is a project based on the <a href="https://fabricmc.net">Fabric Project</a>. Its two main
-                priorities are to keep parity with upstream and to support as many legacy versions as
-                possible.</p>
-            <p>We currently Support versions: 1.12.2, 1.8.9, 1.7.10 & 1.6.4</p>
+    <div class="page-content">
+        <div style="height: 90px;"></div>
+
+        <h1 style="font-size: 36px">The home of legacy version support for Fabric</h1>
+        <p>Legacy Fabric is a project based on the <a href="https://fabricmc.net">Fabric Project</a>. Its two main
+            priorities are to keep parity with upstream and to support as many legacy versions as
+            possible.</p>
+        <p>We currently support versions: 1.3 - 1.13.2</p>
+
+        <div style="height: 90px;"></div>
+
+        <h2 style="margin-bottom: 10px;">Showcase:</h2>
+        <div class="gallery">
+            <img id="gallery-image" alt="Image Failed To Load">
+
+            <p class="gallery-prev" onclick="prevImage();">&#10094;</p>
+            <p class="gallery-next" onclick="nextImage();">&#10095;</p>
         </div>
     </div>
-    <div id="version-preview" class="carousel slide" data-bs-ride="carousel">
-        <br>
-        <br>
-        <br>
-        <br>
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="res/img/1.12.2.png" class="d-block w-100" alt="Image Failed To Load">
-            </div>
-            <div class="carousel-item">
-                <img src="res/img/1.8.9.png" class="d-block w-100" alt="Image Failed To Load">
-            </div>
-            <div class="carousel-item">
-                <img src="res/img/1.7.10.png" class="d-block w-100" alt="Image Failed To Load">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#version-preview" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#version-preview" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
-    </div>
+    <script>
+        let imageIndex = 0;
+        const images = [ "res/img/1.12.2.png", "res/img/1.8.9.png", "res/img/1.7.10.png" ];
+
+        setImage();
+
+        function setImage() {
+            document.getElementById('gallery-image').src = images[imageIndex];
+        }
+
+        function nextImage() {
+            imageIndex = (imageIndex + 1) % images.length;
+            setImage();
+        }
+
+        function prevImage() {
+            // Bruh because javascript remainder is wack
+            imageIndex = imageIndex == 0 ? images.length - 1 : imageIndex - 1;
+            setImage();
+        }
+    </script>
 </body>
 </html>
