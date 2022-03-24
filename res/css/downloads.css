@@ -1,6 +1,30 @@
-button {
-    background-color: #202020;
-    border: 2px #202020;
+h1 {
+    margin-bottom: 0;
+}
+
+.download-container {
+    margin: auto;
+    text-align: left;
+    width: 500px;
+    max-width: 90%;
+}
+
+.instruction-container {
+    margin: auto;
+    text-align: left;
+    width: 400px;
+    max-width: 90%;
+}
+
+.instruction-container h2, h3, h4 {
+    margin-bottom: 0;
+}
+
+/* Download Buttons */
+
+.download-button {
+    background-color: #212529;
+    border: 2px #212529;
     border-radius: 6px;
 
     color: #abafcc;
@@ -9,11 +33,43 @@ button {
     font-size: 16px;
     font-family: system-ui;
     font-weight: bold;
-    margin: 4px 2px;
+    margin: 6px 2px;
     transition-duration: 0.25s;
     cursor: pointer;
 }
 
-button:hover {
+.download-button:hover {
     color: #d0d0d0;
+}
+
+/* Pretty tables and lists */
+
+.table-container {
+    display: inline-block;
+}
+
+table {
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 3px 5px;
+    border: 1px solid #212529;
+    min-width: 55px;
+}
+
+.table-footnote {
+    text-align: left;
+    margin-top: 2px;
+}
+
+ul, ol {
+    margin-top: 3px;
+    padding-left: 30px;
+}
+
+li::marker {
+    font-weight: bold;
 }

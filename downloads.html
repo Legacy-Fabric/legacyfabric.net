@@ -6,7 +6,7 @@
 
     <meta property="og:site_name" content="Legacy Fabric - Downloads">
     <meta property="og:title" content="Legacy Fabric">
-    <meta property="og:url" content="https://legacyfabric.net/">
+    <meta property="og:url" content="https://legacyfabric.net/downloads.html">
     <meta property="og:image" content="https://legacyfabric.net/res/img/logo.png">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
@@ -18,7 +18,7 @@
 <body>
     <nav>
         <a class="main-nav" href="/">
-            <img src="res/img/logo.png" alt="" width="32" height="32" class="d-inline-block align-top">
+            <img src="res/img/logo.png" alt="" width="32" height="32">
             Legacy Fabric
         </a>
         <a href="/downloads.html">Downloads</a>
@@ -27,16 +27,115 @@
         <a href="/discord">Discord</a>
     </nav>
     <div class="page-content">
-        <div style="height: 90px;"></div>
+        <!-- Installer -->
+        <div id="installer-container">
+            <h1>Installer</h1>
+            <p>(For the normal launcher only)</p>
+            <a href="https://nightly.link/Legacy-Fabric/fabric-installer/workflows/build/master/Artifacts.zip"><button class="download-button">Download</button></a>
 
-        <h1 style="margin-bottom: 0;">Installer</h1>
-        <p style="margin-bottom: 0;">Extract the zip then choose which installer to run.</p>
-        <p style="margin-top: 0; margin-bottom: 30px;">(For the normal launcher only, for multimc, download a multimc zip).</p>
-        <a href="https://nightly.link/Legacy-Fabric/fabric-installer/workflows/build/master/Artifacts.zip"><button>Download</button></a>
+            <div class="instruction-container">
+                <h4>How to Install:</h4>
+                <ol>
+                    <li>Extract the zip and choose which installer to run.</li>
+                    <li>Select the minecraft version you want and click "Install".</li>
+                    <li>There should now be a Legacy Fabric profile in your launcher.</li>
+                </ol>
+            </div>
+        </div>
 
-        <div style="height: 90px;"></div>
-        <h1>MultiMC zips</h1>
-        <p>Can't be bothered adding a table so download MultiMC zips from <a href="https://github.com/Legacy-Fabric/LegacyFabric-MultiMC">here</a>.</p>
+        <!-- MultiMC -->
+        <div style="display: none;" id="multimc-container">
+            <h1>MultiMC Zips</h1>
+            <p><b>Stable</b>: uses Fabric loader 0.12.2<br>
+                <b>Latest</b>: uses Fabric loader 0.13.3 but may break some versions<br>
+
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Stable (Recommended)</th>
+                        <th>Latest</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/stable/dist/legacy_fabric_1.13.2.zip">1.13.2</a></td>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/main/dist/legacy_fabric_1.13.2.zip">1.13.2</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/stable/dist/legacy_fabric_1.12.2.zip">1.12.2</a></td>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/main/dist/legacy_fabric_1.12.2.zip">1.12.2</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/stable/dist/legacy_fabric_1.11.2.zip">1.11.2</a></td>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/main/dist/legacy_fabric_1.11.2.zip">1.11.2</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/stable/dist/legacy_fabric_1.10.2.zip">1.10.2</a></td>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/main/dist/legacy_fabric_1.10.2.zip">1.10.2</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/stable/dist/legacy_fabric_1.9.4.zip">1.9.4</a></td>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/main/dist/legacy_fabric_1.9.4.zip">1.9.4</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/stable/dist/legacy_fabric_1.8.9.zip">1.8.9</a><sup title="Includes Fabric API">+</sup></td>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/main/dist/legacy_fabric_1.8.9.zip">1.8.9</a><sup title="Includes Fabric API">+</sup></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/stable/dist/legacy_fabric_1.8.zip">1.8</a></td>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/main/dist/legacy_fabric_1.8.zip">1.8</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/stable/dist/legacy_fabric_1.7.10.zip">1.7.10</a></td>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/main/dist/legacy_fabric_1.7.10.zip">1.7.10</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/stable/dist/legacy_fabric_1.6.4.zip">1.6.4</a></td>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/main/dist/legacy_fabric_1.6.4.zip">1.6.4</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/stable/dist/legacy_fabric_1.5.2.zip">1.5.2</a></td>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/main/dist/legacy_fabric_1.5.2.zip">1.5.2</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/stable/dist/legacy_fabric_1.4.7.zip">1.4.7</a></td>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/main/dist/legacy_fabric_1.4.7.zip">1.4.7</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/stable/dist/legacy_fabric_1.3.2.zip">1.3.2</a></td>
+                        <td><a href="https://github.com/Grayray75/LegacyFabric-MultiMC/raw/main/dist/legacy_fabric_1.3.2.zip">1.3.2</a></td>
+                    </tr>
+                </table>
+                <p class="table-footnote"><sup style="color: #abafcc;">+</sup> Includes Fabric API</p>
+            </div>
+
+            <div class="instruction-container">
+                <h4>How to Install:</h4>
+                <ol>
+                    <li>Download the version you want.</li>
+                    <li>Drag the zip onto MultiMC and click "OK".</li>
+                    <li>There should now be a Legacy Fabric profile in MultiMC.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div style="height: 60px;"></div>
+
+        <div class="download-container">
+            <b>Other installation options:</b>
+            <ul>
+                <li><a onclick="showContainer('installer-container');">Minecraft Launcher</a></li>
+                <li><a onclick="showContainer('multimc-container');">MultiMC</a></li>
+            </ul>
+        </div>
     </div>
+<script>
+    const containers = [ 'installer-container', 'multimc-container' ];
+
+    function showContainer(container) {
+        containers.forEach(c => {
+            document.getElementById(c).style.display = 'none';
+        });
+        document.getElementById(container).style.display = 'block';
+    }
+</script>
 </body>
 </html>
