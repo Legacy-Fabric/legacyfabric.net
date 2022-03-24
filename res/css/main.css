@@ -7,6 +7,10 @@ body {
 
 /* General */
 
+.page-content {
+    padding-top: 90px;
+}
+
 .page-content a {
     color: #3a8af2;
     text-decoration: none;
@@ -17,7 +21,8 @@ body {
 }
 
 .page-content a:hover {
-    text-decoration: revert;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Navbar */

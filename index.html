@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Legacy Fabric - Home</title>
 
     <meta property="og:site_name" content="Legacy Fabric - Home">
@@ -27,8 +27,6 @@
         <a href="/discord">Discord</a>
     </nav>
     <div class="page-content">
-        <div style="height: 90px;"></div>
-
         <h1 style="font-size: 36px">The home of legacy version support for Fabric</h1>
         <p>Legacy Fabric is a project based on the <a href="https://fabricmc.net">Fabric Project</a>. Its two main
             priorities are to keep parity with upstream and to support as many legacy versions as
@@ -39,7 +37,9 @@
 
         <h2 style="margin-bottom: 10px;">Showcase:</h2>
         <div class="gallery">
-            <img id="gallery-image" alt="Image Failed To Load">
+            <img id="gallery-image" src="" alt="Image Failed To Load">
+            <p class="gallery-text" id="gallery-subtitle">[subtitle]</p>
+            <p class="gallery-text" id="gallery-count" style="font-size: 12px; bottom: -10px;">[count]</p>
 
             <p class="gallery-prev" onclick="prevImage();">&#10094;</p>
             <p class="gallery-next" onclick="nextImage();">&#10095;</p>
@@ -47,12 +47,18 @@
     </div>
     <script>
         let imageIndex = 0;
-        const images = [ "res/img/1.12.2.png", "res/img/1.8.9.png", "res/img/1.7.10.png" ];
+        const images = [
+            "res/img/showcase-dev.png", "res/img/showcase-drawers.png", "res/img/showcase-hypixel.png",
+            "res/img/showcase-meta.png", "res/img/showcase-modmenu.png", "res/img/showcase-wither.png"];
+
+        const subtitles = [ "Development", "Drawers mod", "Hypixel", "Meta API", "Modmenu", "Wither"];
 
         setImage();
 
         function setImage() {
             document.getElementById('gallery-image').src = images[imageIndex];
+            document.getElementById('gallery-subtitle').innerHTML = subtitles[imageIndex];
+            document.getElementById('gallery-count').innerHTML = imageIndex + 1 + " / " + images.length;
         }
 
         function nextImage() {
@@ -62,7 +68,7 @@
 
         function prevImage() {
             // Bruh because javascript remainder is wack
-            imageIndex = imageIndex == 0 ? images.length - 1 : imageIndex - 1;
+            imageIndex = imageIndex === 0 ? images.length - 1 : imageIndex - 1;
             setImage();
         }
     </script>
