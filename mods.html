@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Legacy Fabric - Mods</title>
+
+    <meta property="og:site_name" content="Legacy Fabric - Mods">
+    <meta property="og:title" content="Legacy Fabric">
+    <meta property="og:url" content="https://legacyfabric.net/mods.html">
+    <meta property="og:image" content="https://legacyfabric.net/res/img/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:description" content="The home of legacy version support for Fabric.">
+
+    <link href="res/css/main.css" type="text/css" rel="stylesheet">
+    <link href="res/css/downloads.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a class="main-nav" href="/">
+            <img src="res/img/logo.png" alt="" width="32" height="32">
+            Legacy Fabric
+        </a>
+        <a href="/downloads.html">Downloads</a>
+        <a href="/mods.html">Mods</a>
+        <a href="/wiki.html">Wiki</a>
+        <a href="https://github.com/Legacy-Fabric/">Source</a>
+        <a href="/discord">Discord</a>
+    </nav>
+    <div class="page-content">
+        <p>Mod compatibility status<br>
+        This isn't an official list of mods, more mods exist but those here have been tested by our team.<br>
+        All mods were tested using loader 0.13.3 or Latest MultiMC Zip.</p>
+        <!-- 1.12.2 -->
+        <div id="1.12.2-container">
+            <h1>1.12.2</h1>
+            
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Mod name</th>
+                        <th>Status</th>
+                    </tr>
+
+                    <td><a href="https://modrinth.com/mod/r0v8vy1s">Alternate Current</a></td>
+                    <td>Broken</td>
+
+                    <td><a href="https://modrinth.com/mod/sUbMm93i">Don't Clear Chat History</a></td>
+                    <td>Broken</td>
+
+                    <td><a href="https://modrinth.com/mod/6852vWRO">Durability Speed (Legacy Backport)</a></td>
+                    <td>Broken</td>
+
+                    <td><a href="https://modrinth.com/mod/BOhW0XDq">Fatal Blow - Legacy Backport</a></td>
+                    <td>Broken</td>
+
+                    <td><a href="https://modrinth.com/mod/S5ivha5X">I Know What I'm Doing</a></td>
+                    <td>Broken</td>
+
+                    <td><a href="https://modrinth.com/mod/nNMXZUPi">Infinite Water Bucket</a></td>
+                    <td>Working</td>
+
+                    <td><a href="https://modrinth.com/mod/pBbOtJk2">Inventory Pause (Cursed)</a></td>
+                    <td>Broken</td>
+
+                    <td><a href="https://modrinth.com/mod/HXXsQvqV">No More Bleeding Sheep</a></td>
+                    <td>Broken</td>
+
+                    <td><a href="https://modrinth.com/mod/CcwKyFAw">No Enchant Cap (Legacy Backport)</a></td>
+                    <td>Broken</td>
+
+                    <td><a href="https://modrinth.com/mod/TvL1V8O5">No Recipe Book (Fabric)</a></td>
+                    <td>Broken</td>
+                </table>
+            </div>
+        </div>
+
+        <!-- MultiMC -->
+        <div style="display: none;" id="1.8.9-container">
+            <h1>1.8.9</h1>
+
+            <div class="table-container">
+                <p>Work in Progress!</p>
+                <table>
+                    
+                </table>
+            </div>
+        </div>
+
+        <div style="height: 60px;"></div>
+
+        <div class="version-container">
+            <b>Other Minecraft versions:</b>
+            <ul>
+                <li><a onclick="showContainer('1.12.2-container');">1.12.2</a></li>
+                <li><a onclick="showContainer('1.8.9-container');">1.8.9</a></li>
+            </ul>
+        </div>
+    </div>
+<script>
+    const containers = [ '1.12.2-container', '1.8.9-container' ];
+
+    function showContainer(container) {
+        containers.forEach(c => {
+            document.getElementById(c).style.display = 'none';
+        });
+        document.getElementById(container).style.display = 'block';
+    }
+</script>
+</body>
+</html>
