@@ -39,6 +39,7 @@
                 <li><a onclick="showContainer('1.12.2-container');">1.12.2</a></li>
                 <li><a onclick="showContainer('1.8.9-container');">1.8.9</a></li>
                 <li><a onclick="showContainer('1.7.10-container');">1.7.10</a></li>
+                <li><a onclick="showContainer('1.6.4-container');">1.6.4</a></li>
             </ul>
         </div>
 
@@ -279,9 +280,34 @@
                 </table>
             </div>
         </div>
+
+        <!-- 1.6.4 -->
+        <div style="display: none;" id="1.6.4-container">
+            <h1>1.6.4</h1>
+
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Mod name</th>
+                        <th>Status</th>
+                    </tr>
+
+                    <tr>
+                        <td><a href="https://modrinth.com/mod/r0v8vy1s">Alternate Current</a></td>
+                        <td>Broken</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="https://modrinth.com/mod/nNMXZUPi">Infinite Water Bucket</a></td>
+                        <td>Broken</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
     </div>
 <script>
-    const containers = [ '1.13.2-container', '1.12.2-container', '1.8.9-container', '1.7.10-container' ];
+    const containers = [ '1.13.2-container', '1.12.2-container', '1.8.9-container', '1.7.10-container', '1.6.4-container' ];
 
     function showContainer(container) {
         containers.forEach(c => {
