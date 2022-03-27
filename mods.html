@@ -35,8 +35,10 @@
         <div class="version-container">
             <b>Other Minecraft versions:</b>
             <ul>
+                <li><a onclick="showContainer('1.13.2-container');">1.13.2</a></li>
                 <li><a onclick="showContainer('1.12.2-container');">1.12.2</a></li>
                 <li><a onclick="showContainer('1.8.9-container');">1.8.9</a></li>
+                <li><a onclick="showContainer('1.7.10-container');">1.7.10</a></li>
             </ul>
         </div>
 
@@ -228,9 +230,58 @@
                 </table>
             </div>
         </div>
+
+        <!-- 1.7.10 -->
+        <div style="display: none;" id="1.7.10-container">
+            <h1>1.7.10</h1>
+
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Mod name</th>
+                        <th>Status</th>
+                    </tr>
+
+                    <tr>
+                        <td><a href="https://modrinth.com/mod/r0v8vy1s">Alternate Current</a></td>
+                        <td>Broken</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="https://modrinth.com/mod/GDpQeUxh">AnTitanic</a></td>
+                        <td>Broken</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="https://modrinth.com/mod/sUbMm93i">Don't Clear Chat History</a></td>
+                        <td>Broken</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="https://modrinth.com/mod/6852vWRO">Durability Speed (Legacy Backport)</a></td>
+                        <td>Broken</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="https://modrinth.com/mod/BOhW0XDq">Fatal Blow - Legacy Backport</a></td>
+                        <td>Broken</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="https://modrinth.com/mod/nNMXZUPi">Infinite Water Bucket</a></td>
+                        <td>Working</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="https://modrinth.com/mod/CcwKyFAw">No Enchant Cap (Legacy Backport)</a></td>
+                        <td>Broken</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
 <script>
-    const containers = [ '1.13.2-container', '1.12.2-container', '1.8.9-container' ];
+    const containers = [ '1.13.2-container', '1.12.2-container', '1.8.9-container', '1.7.10-container' ];
 
     function showContainer(container) {
         containers.forEach(c => {
