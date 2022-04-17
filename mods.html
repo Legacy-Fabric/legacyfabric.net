@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Legacy Fabric - Mods</title>
-
     <meta property="og:site_name" content="Legacy Fabric - Mods">
     <meta property="og:title" content="Legacy Fabric">
     <meta property="og:url" content="https://legacyfabric.net/mods.html">
@@ -11,17 +10,14 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
     <meta property="og:description" content="The home of legacy version support for Fabric.">
-
     <link href="res/css/main.css" type="text/css" rel="stylesheet">
     <link href="res/css/downloads.css" type="text/css" rel="stylesheet">
-
     <script src="res/mods.js">
-
     </script>
     <script>
         function showVersion(version) {
             const table = document.getElementById("mods-table");
-            while(table.children.length > 1) {
+            while (table.children.length > 1) {
                 table.removeChild(table.lastChild)
             }
             document.getElementById("version-header").innerText = version;
@@ -51,8 +47,8 @@
 <div class="page-content">
     <p>Mod compatibility status:<br>
         This isn't an official list of mods. More mods exist, but these are the ones tested by the community.</p>
-    Please Feel free to add mods to <a href="https://github.com/Legacy-Fabric/legacyfabric.net/blob/master/res/mods.js"> the list </a>! This is community generated, and needs contribution to stay relevant.
-
+    Please Feel free to add mods to <a href="https://github.com/Legacy-Fabric/legacyfabric.net/blob/master/res/mods.js">
+    the list </a>! This is community generated, and needs contribution to stay relevant.
     <div class="version-container">
         <b>Other Minecraft versions:</b>
         <ul>
@@ -63,7 +59,6 @@
             <li><a onclick="showVersion('1.6.4');">1.6.4</a></li>
         </ul>
     </div>
-
     <div style="height: 10px;"></div>
     <h1 id="version-header"></h1>
     <table id="mods-table">
@@ -73,6 +68,5 @@
         </tr>
     </table>
 </div>
-
 </body>
 </html>
