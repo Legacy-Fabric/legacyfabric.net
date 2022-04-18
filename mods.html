@@ -15,6 +15,16 @@
     <script src="res/mods.js">
     </script>
     <script>
+        function loadVersions() {
+            const table = document.getElementById("version-list");
+
+            for (const version in mods) {
+                const li = document.createElement("li");
+                li.innerHTML = "<a onclick=\"showVersion('" + version + "');\">" + version + "</a>"
+                table.appendChild(li)
+            }
+        }
+
         function showVersion(version) {
             const table = document.getElementById("mods-table");
             while (table.children.length > 1) {
@@ -31,7 +41,7 @@
         }
     </script>
 </head>
-<body onload="showVersion('1.8.9')">
+<body onload="loadVersions();showVersion('1.8.9')">
 <nav>
     <a class="main-nav" href="/">
         <!--suppress CheckImageSize -->
@@ -51,12 +61,7 @@
     the list</a>! This is community generated, and needs contribution to stay relevant.
     <div class="version-container">
         <b>Other Minecraft versions:</b>
-        <ul>
-            <li><a onclick="showVersion('1.13.2');">1.13.2</a></li>
-            <li><a onclick="showVersion('1.12.2');">1.12.2</a></li>
-            <li><a onclick="showVersion('1.8.9');">1.8.9</a></li>
-            <li><a onclick="showVersion('1.7.10');">1.7.10</a></li>
-            <li><a onclick="showVersion('1.6.4');">1.6.4</a></li>
+        <ul id="version-list">
         </ul>
     </div>
     <div style="height: 10px;"></div>
