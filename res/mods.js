@@ -1,4 +1,78 @@
 const mods = {
+    "1.13.2": [
+        {
+            "name": "Alternate Current",
+            "link": "https://modrinth.com/mod/r0v8vy1s",
+            "working": false
+        },
+        {
+            "name": "Infinte Water Bucket",
+            "link": "https://modrinth.com/mod/nNMXZUPi",
+            "working": true
+        },
+        {
+            "name": "No More Bleeding Sheep",
+            "link": "https://modrinth.com/mod/HXXsQvqV",
+            "working": false
+        },
+        {
+            "name": "No Recipe Book (Fabric)",
+            "link": "https://modrinth.com/mod/TvL1V8O5",
+            "working": false
+        },
+        {
+            "name": "Redstone Multimeter Fabric",
+            "link": "https://modrinth.com/mod/X6YTb3G1",
+            "working": false
+        }
+    ],
+    "1.12.2": [
+        {
+            "name": "Alternate Current",
+            "link": "https://modrinth.com/mod/r0v8vy1s",
+            "working": false
+        },
+        {
+            "name": "Don't Clear Chat History",
+            "link": "https://modrinth.com/mod/sUbMm93i",
+            "working": false
+        },
+        {
+            "name": "Durability Speed (Legacy Backport)",
+            "link": "https://modrinth.com/mod/6852vWRO",
+            "working": false
+        },
+        {
+            "name": "Fatal Blow - Legacy Backport",
+            "link": "https://modrinth.com/mod/BOhW0XD",
+            "working": false
+        },
+        {
+            "name": "Infinite Water Bucket",
+            "link": "https://modrinth.com/mod/nNMXZUPi",
+            "working": true
+        },
+        {
+            "name": "Inventory Pause (Cursed)",
+            "link": "https://modrinth.com/mod/pBbOtJk2",
+            "working": false
+        },
+        {
+            "name": "No More Bleeding Sheep",
+            "link": "https://modrinth.com/mod/HXXsQvqV",
+            "working": false
+        },
+        {
+            "name": "No Enchant Cap (Legacy Backport)",
+            "link": "https://modrinth.com/mod/CcwKyFAw",
+            "working": false
+        },
+        {
+            "name": "No Recipe Book (Fabric)",
+            "link": "https://modrinth.com/mod/TvL1V8O5",
+            "working": false
+        }
+    ],
     "1.8.9": [
         {
             "name": "Alternate Current",
@@ -116,80 +190,6 @@ const mods = {
             "working": false
         }
     ],
-    "1.13.2": [
-        {
-            "name": "Alternate Current",
-            "link": "https://modrinth.com/mod/r0v8vy1s",
-            "working": false
-        },
-        {
-            "name": "Infinte Water Bucket",
-            "link": "https://modrinth.com/mod/nNMXZUPi",
-            "working": true
-        },
-        {
-            "name": "No More Bleeding Sheep",
-            "link": "https://modrinth.com/mod/HXXsQvqV",
-            "working": false
-        },
-        {
-            "name": "No Recipe Book (Fabric)",
-            "link": "https://modrinth.com/mod/TvL1V8O5",
-            "working": false
-        },
-        {
-            "name": "Redstone Multimeter Fabric",
-            "link": "https://modrinth.com/mod/X6YTb3G1",
-            "working": false
-        }
-    ],
-    "1.12.2": [
-        {
-            "name": "Alternate Current",
-            "link": "https://modrinth.com/mod/r0v8vy1s",
-            "working": false
-        },
-        {
-            "name": "Don't Clear Chat History",
-            "link": "https://modrinth.com/mod/sUbMm93i",
-            "working": false
-        },
-        {
-            "name": "Durability Speed (Legacy Backport)",
-            "link": "https://modrinth.com/mod/6852vWRO",
-            "working": false
-        },
-        {
-            "name": "Fatal Blow - Legacy Backport",
-            "link": "https://modrinth.com/mod/BOhW0XD",
-            "working": false
-        },
-        {
-            "name": "Infinite Water Bucket",
-            "link": "https://modrinth.com/mod/nNMXZUPi",
-            "working": true
-        },
-        {
-            "name": "Inventory Pause (Cursed)",
-            "link": "https://modrinth.com/mod/pBbOtJk2",
-            "working": false
-        },
-        {
-            "name": "No More Bleeding Sheep",
-            "link": "https://modrinth.com/mod/HXXsQvqV",
-            "working": false
-        },
-        {
-            "name": "No Enchant Cap (Legacy Backport)",
-            "link": "https://modrinth.com/mod/CcwKyFAw",
-            "working": false
-        },
-        {
-            "name": "No Recipe Book (Fabric)",
-            "link": "https://modrinth.com/mod/TvL1V8O5",
-            "working": false
-        }
-    ],
     "1.7.10": [
         {
             "name": "Alternate Current",
@@ -251,12 +251,19 @@ const mods = {
         {
             "name": "Infinite Water Bucket",
             "link": "https://modrinth.com/mod/nNMXZUPi",
-            "working": false
+            "working": true
+        }
+    ],
+    "1.3.2": [
+        {
+            "name": "Fabricated ModLoader",
+            "link": "https://github.com/arthurbambou/Fabricated-Legacy-Forge/releases",
+            "working": true
         }
     ]
 };
 
-let versions = ["1.8.9", "1.13.2", "1.12.2", "1.7.10", "1.6.4"];
+let versions = ["1.8.9", "1.13.2", "1.12.2", "1.7.10", "1.6.4", "1.3.2"];
 versions.forEach(
     function (ver) {
         console.log("loaded " + mods[ver].length + " mods for " + ver);
