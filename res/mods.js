@@ -2,8 +2,8 @@ const mods = {
     "1.13.2": [
         {
             "name": "Alternate Current",
-            "link": "https://modrinth.com/mod/r0v8vy1s",
-            "working": false
+            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
+            "working": true
         },
         {
             "name": "Infinte Water Bucket",
@@ -29,8 +29,8 @@ const mods = {
     "1.12.2": [
         {
             "name": "Alternate Current",
-            "link": "https://modrinth.com/mod/r0v8vy1s",
-            "working": false
+            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
+            "working": true
         },
         {
             "name": "Don't Clear Chat History",
@@ -71,13 +71,39 @@ const mods = {
             "name": "No Recipe Book (Fabric)",
             "link": "https://modrinth.com/mod/TvL1V8O5",
             "working": false
+        },
+        {
+            "name": "One Block At A Time",
+            "link": "https://modrinth.com/mod/onebloc",
+            "working": true
+        }
+    ],
+    "1.11.2": [
+        {
+            "name": "Alternate Current",
+            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
+            "working": true
+        }
+    ],
+    "1.10.2": [
+        {
+            "name": "Alternate Current",
+            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
+            "working": true
+        }
+    ],
+    "1.9.4": [
+        {
+            "name": "Alternate Current",
+            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
+            "working": true
         }
     ],
     "1.8.9": [
         {
             "name": "Alternate Current",
-            "link": "https://modrinth.com/mod/r0v8vy1s",
-            "working": false
+            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
+            "working": true
         },
         {
             "name": "AnTitanic",
@@ -137,7 +163,7 @@ const mods = {
         {
             "name": "Legacy Extended Hotbar",
             "link": "https://modrinth.com/mod/twG4qbSN",
-            "working": false
+            "working": true
         },
         {
             "name": "Legacy Mod Menu",
@@ -193,8 +219,8 @@ const mods = {
     "1.7.10": [
         {
             "name": "Alternate Current",
-            "link": "https://modrinth.com/mod/r0v8vy1s",
-            "working": false
+            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
+            "working": true
         },
         {
             "name": "AnTitanic",
@@ -245,16 +271,40 @@ const mods = {
     "1.6.4": [
         {
             "name": "Alternate Current",
-            "link": "https://modrinth.com/mod/r0v8vy1s",
-            "working": false
+            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
+            "working": true
         },
         {
             "name": "Infinite Water Bucket",
             "link": "https://modrinth.com/mod/nNMXZUPi",
             "working": true
+        },
+        {
+            "name": "Better Doors",
+            "link": "https://github.com/baraclese/better-doors",
+            "working": true
+        }
+    ],
+    "1.5.2": [
+        {
+            "name": "Alternate Current",
+            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
+            "working": true
+        }
+    ],
+    "1.4.7": [
+        {
+            "name": "Alternate Current",
+            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
+            "working": true
         }
     ],
     "1.3.2": [
+        {
+            "name": "Alternate Current",
+            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
+            "working": true
+        },
         {
             "name": "Fabricated Forge",
             "link": "https://modrinth.com/mod/fabricated-forge",
@@ -263,7 +313,7 @@ const mods = {
     ]
 };
 
-let versions = ["1.8.9", "1.13.2", "1.12.2", "1.7.10", "1.6.4", "1.3.2"];
+let versions = ["1.8.9", "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"];
 versions.forEach(
     function (ver) {
         console.log("loaded " + mods[ver].length + " mods for " + ver);
