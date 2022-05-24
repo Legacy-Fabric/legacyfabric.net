@@ -257,7 +257,7 @@ const mods = {
     "1.3.2": [
         {
             "name": "Fabricated Forge",
-            "link": "https://github.com/arthurbambou/Fabricated-Legacy-Forge/releases",
+            "link": "https://modrinth.com/mod/fabricated-forge",
             "working": true
         }
     ]
