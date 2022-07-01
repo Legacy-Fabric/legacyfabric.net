@@ -74,7 +74,7 @@ const mods = {
         },
         {
             "name": "One Block At A Time",
-            "link": "https://modrinth.com/mod/onebloc",
+            "link": "https://modrinth.com/mod/oneblock",
             "working": true
         }
     ],
@@ -187,7 +187,7 @@ const mods = {
         },
         {
             "name": "One Block At A Time",
-            "link": "https://modrinth.com/mod/onebloc",
+            "link": "https://modrinth.com/mod/oneblock",
             "working": true
         },
         {
@@ -313,9 +313,6 @@ const mods = {
     ]
 };
 
-let versions = ["1.8.9", "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"];
-versions.forEach(
-    function (ver) {
-        console.log("loaded " + mods[ver].length + " mods for " + ver);
-    }
-);
+for (const ver in mods) {
+    console.log("loaded " + mods[ver].length + " mods for " + ver);
+}
