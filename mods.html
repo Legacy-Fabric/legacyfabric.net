@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Legacy Fabric - Mods</title>
+
     <meta property="og:site_name" content="Legacy Fabric - Mods">
     <meta property="og:title" content="Legacy Fabric">
     <meta property="og:url" content="https://legacyfabric.net/mods.html">
@@ -10,19 +11,51 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
     <meta property="og:description" content="The home of legacy version support for Fabric.">
+
     <link href="res/css/main.css" type="text/css" rel="stylesheet">
-    <link href="res/css/downloads.css" type="text/css" rel="stylesheet">
-    <script src="res/mods.js">
-    </script>
+    <link href="res/css/mods.css" type="text/css" rel="stylesheet">
+    <script src="res/mods.js"></script>
+</head>
+<body onload="loadVersions(); showVersion('1.8.9')">
+    <nav>
+        <a class="main-nav" href="/">
+            <!--suppress CheckImageSize -->
+            <img src="res/img/logo.png" alt="" width="32" height="32">
+            Legacy Fabric
+        </a>
+        <a href="/downloads.html">Downloads</a>
+        <a href="/mods.html">Mods</a>
+        <a href="https://github.com/Legacy-Fabric/">Source</a>
+        <a href="/discord">Discord</a>
+        <a href="https://status.legacyfabric.net">Status</a>
+    </nav>
+    <div class="page-content">
+        <h2>Mod compatibility status</h2>
+        <p>This isn't an official list of mods. More mods exist, but these are the ones tested by the community.<br>
+        Please Feel free to add mods to <a href="https://github.com/Legacy-Fabric/legacyfabric.net/blob/master/res/mods.js">
+        the list</a>! This is community generated, and needs contribution to stay relevant.</p>
+
+        <label for="version-select">Minecraft Version:</label>
+        <select id="version-select" onchange="showVersion(this.value);"></select>
+
+        <div style="height: 10px;"></div>
+
+        <table id="mods-table">
+            <tr>
+                <th>Name</th>
+                <th>Working</th>
+            </tr>
+        </table>
+    </div>
     <script>
         function loadVersions() {
-            const table = document.getElementById("version-list");
-
+            let newHtml = "";
             for (const version in mods) {
-                const li = document.createElement("li");
-                li.innerHTML = "<a onclick=\"showVersion('" + version + "');\">" + version + "</a>"
-                table.appendChild(li)
+                const selected = version === "1.8.9" ? " selected" : "";
+                newHtml += `<option value="${version}" ${selected}>${version}</option>`;
             }
+
+            document.getElementById("version-select").innerHTML = newHtml;
         }
 
         function showVersion(version) {
@@ -30,49 +63,14 @@
             while (table.children.length > 1) {
                 table.removeChild(table.lastChild)
             }
-            document.getElementById("version-header").innerText = version;
-            mods[version].forEach(function (mod) {
+            mods[version].forEach(mod => {
                 const tr = document.createElement("tr");
                 const working = (mod.working) ? "✔️" : "❌";
-                tr.innerHTML = "<td><a href=\"" + mod.link + "\">" + mod.name + "</a></td>" +
-                    "<td>" + working + "</td>";
+                tr.innerHTML = `<td><a href="${mod.link}">${mod.name}</a></td>
+                                <td>${working}</td>`;
                 table.appendChild(tr);
             });
         }
     </script>
-</head>
-<body onload="loadVersions();showVersion('1.8.9')">
-<nav>
-    <a class="main-nav" href="/">
-        <!--suppress CheckImageSize -->
-        <img src="res/img/logo.png" alt="" width="32" height="32">
-        Legacy Fabric
-    </a>
-    <a href="/downloads.html">Downloads</a>
-    <a href="/mods.html">Mods</a>
-    <a href="/wiki.html">Wiki</a>
-    <a href="https://github.com/Legacy-Fabric/">Source</a>
-    <a href="/discord">Discord</a>
-    <a href="https://status.legacyfabric.net">Status</a>
-</nav>
-<div class="page-content">
-    <p>Mod compatibility status:<br>
-        This isn't an official list of mods. More mods exist, but these are the ones tested by the community.</p>
-    Please Feel free to add mods to <a href="https://github.com/Legacy-Fabric/legacyfabric.net/blob/master/res/mods.js">
-    the list</a>! This is community generated, and needs contribution to stay relevant.
-    <div class="version-container">
-        <b>Other Minecraft versions:</b>
-        <ul id="version-list">
-        </ul>
-    </div>
-    <div style="height: 10px;"></div>
-    <h1 id="version-header"></h1>
-    <table id="mods-table">
-        <tr>
-            <th>Name</th>
-            <th>Working</th>
-        </tr>
-    </table>
-</div>
 </body>
 </html>

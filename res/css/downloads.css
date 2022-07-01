@@ -1,7 +1,3 @@
-h1 {
-    margin-bottom: 0;
-}
-
 .download-container {
     margin: auto;
     text-align: left;
@@ -40,36 +36,4 @@ h1 {
 
 .download-button:hover {
     color: #d0d0d0;
-}
-
-/* Pretty tables and lists */
-
-.table-container {
-    display: inline-block;
-}
-
-table {
-    margin: auto;
-    table-layout: fixed;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 3px 5px;
-    border: 1px solid #212529;
-    min-width: 55px;
-}
-
-.table-footnote {
-    text-align: left;
-    margin-top: 2px;
-}
-
-ul, ol {
-    margin-top: 3px;
-    padding-left: 30px;
-}
-
-li::marker {
-    font-weight: bold;
 }

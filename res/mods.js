@@ -39,12 +39,12 @@ const mods = {
         },
         {
             "name": "Durability Speed (Legacy Backport)",
-            "link": "https://modrinth.com/mod/6852vWRO",
+            "link": "https://github.com/PseudoDistant/durability-speed/releases",
             "working": false
         },
         {
             "name": "Fatal Blow - Legacy Backport",
-            "link": "https://modrinth.com/mod/BOhW0XD",
+            "link": "https://github.com/PseudoDistant/fatal-blow/releases",
             "working": false
         },
         {
@@ -64,7 +64,7 @@ const mods = {
         },
         {
             "name": "No Enchant Cap (Legacy Backport)",
-            "link": "https://modrinth.com/mod/CcwKyFAw",
+            "link": "https://github.com/PseudoDistant/no-enchantment-cap/releases",
             "working": false
         },
         {
@@ -74,7 +74,7 @@ const mods = {
         },
         {
             "name": "One Block At A Time",
-            "link": "https://modrinth.com/mod/onebloc",
+            "link": "https://modrinth.com/mod/oneblock",
             "working": true
         }
     ],
@@ -107,7 +107,7 @@ const mods = {
         },
         {
             "name": "AnTitanic",
-            "link": "https://modrinth.com/mod/GDpQeUxh",
+            "link": "https://github.com/PseudoDistant/AnTitanic/releases",
             "working": false
         },
         {
@@ -127,7 +127,7 @@ const mods = {
         },
         {
             "name": "Durability Speed (Legacy Backport)",
-            "link": "https://modrinth.com/mod/6852vWRO",
+            "link": "https://github.com/PseudoDistant/durability-speed/releases",
             "working": false
         },
         {
@@ -137,7 +137,7 @@ const mods = {
         },
         {
             "name": "Fatal Blow - Legacy Backport",
-            "link": "https://modrinth.com/mod/BOhW0XDq",
+            "link": "https://github.com/PseudoDistant/fatal-blow/releases",
             "working": false
         },
         {
@@ -177,7 +177,7 @@ const mods = {
         },
         {
             "name": "No Enchant Cap (Legacy Backport)",
-            "link": "https://modrinth.com/mod/CcwKyFAw",
+            "link": "https://github.com/PseudoDistant/no-enchantment-cap/releases",
             "working": false
         },
         {
@@ -187,7 +187,7 @@ const mods = {
         },
         {
             "name": "One Block At A Time",
-            "link": "https://modrinth.com/mod/onebloc",
+            "link": "https://modrinth.com/mod/oneblock",
             "working": true
         },
         {
@@ -224,7 +224,7 @@ const mods = {
         },
         {
             "name": "AnTitanic",
-            "link": "https://modrinth.com/mod/GDpQeUxh",
+            "link": "https://github.com/PseudoDistant/AnTitanic/releases",
             "working": false
         },
         {
@@ -239,7 +239,7 @@ const mods = {
         },
         {
             "name": "Fatal Blow - Legacy Backport",
-            "link": "https://modrinth.com/mod/BOhW0XDq",
+            "link": "https://github.com/PseudoDistant/fatal-blow/releases",
             "working": false
         },
         {
@@ -254,7 +254,7 @@ const mods = {
         },
         {
             "name": "No Enchant Cap (Legacy Backport)",
-            "link": "https://modrinth.com/mod/CcwKyFAw",
+            "link": "https://github.com/PseudoDistant/no-enchantment-cap/releases",
             "working": false
         },
         {
@@ -313,9 +313,6 @@ const mods = {
     ]
 };
 
-let versions = ["1.8.9", "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"];
-versions.forEach(
-    function (ver) {
-        console.log("loaded " + mods[ver].length + " mods for " + ver);
-    }
-);
+for (const ver in mods) {
+    console.log("loaded " + mods[ver].length + " mods for " + ver);
+}

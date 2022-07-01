@@ -1,11 +1,29 @@
+* {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 body {
     background-color: #34373b;
     color: #e0e0e0;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     text-align: center;
 }
 
 /* General */
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
 
 .page-content {
     padding-top: 90px;
@@ -41,7 +59,7 @@ nav {
 nav a {
     color: #abafcc;
     text-decoration: none;
-    padding: 7px;
+    padding: 8px;
     transition-duration: 0.25s;
 }
 
@@ -63,4 +81,36 @@ nav a.main-nav:hover {
 nav img {
     display: inline-block;
     vertical-align: top;
+}
+
+/* Pretty tables and lists */
+
+.table-container {
+    display: inline-block;
+}
+
+table {
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 3px 5px;
+    border: 1px solid #212529;
+    min-width: 55px;
+}
+
+.table-footnote {
+    text-align: left;
+    margin-top: 2px;
+}
+
+ul, ol {
+    margin-top: 3px;
+    padding-left: 30px;
+}
+
+li::marker {
+    font-weight: bold;
 }

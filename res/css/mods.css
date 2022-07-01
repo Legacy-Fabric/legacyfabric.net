@@ -1,0 +1,12 @@
+label {
+    font-size: 18px;
+}
+
+select {
+    font-size: 18px;
+    margin: 10px;
+    background-color: #292929;
+    border: 2px solid #292929;
+    border-radius: 4px;
+    color: #e0e0e0;
+}
