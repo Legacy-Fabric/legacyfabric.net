@@ -65,7 +65,7 @@
             }
             mods[version].forEach(mod => {
                 const tr = document.createElement("tr");
-                const working = (mod.working) ? "✔️" : "❌";
+                const working = (mod.working) ? "✔" : "❌";
                 tr.innerHTML = `<td><a href="${mod.link}">${mod.name}</a></td>
                                 <td>${working}</td>`;
                 table.appendChild(tr);
