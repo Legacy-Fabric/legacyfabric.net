@@ -116,6 +116,11 @@ const mods = {
             "working": true
         },
         {
+            "name": "AxolotlClient",
+            "link": "https://modrinth.com/mod/axolotlclient",
+            "working": true
+        },
+        {
             "name": "ChromaHudFabric",
             "link": "https://modrinth.com/mod/PzuxEnMj",
             "working": false
