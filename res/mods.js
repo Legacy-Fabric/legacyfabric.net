@@ -1,323 +1,294 @@
-const mods = {
-    "1.13.2": [
-        {
-            "name": "Alternate Current",
-            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
-            "working": true
+const mods = [
+    {
+        "name": "Alternate Current",
+        "links": {
+            "github": "https://github.com/SpaceWalkerRS/alternate-current",
         },
-        {
-            "name": "Infinte Water Bucket",
-            "link": "https://modrinth.com/mod/nNMXZUPi",
-            "working": true
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
+        "name": "AnTitanic",
+        "links": {
+            "github": "https://github.com/PseudoDistant/AnTitanic",
         },
-        {
-            "name": "No More Bleeding Sheep",
-            "link": "https://modrinth.com/mod/HXXsQvqV",
-            "working": false
+        "working": false,
+        "versions": [ "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "AutoGG",
+        "links": {
+            "github": "https://gitlab.com/DragonEggBedrockBreaking/AutoGG",
+            "modrinth": "https://modrinth.com/mod/autogg",
         },
-        {
-            "name": "No Recipe Book (Fabric)",
-            "link": "https://modrinth.com/mod/TvL1V8O5",
-            "working": false
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "AxolotlClient",
+        "links": {
+            "github": "https://github.com/AxolotlClient",
+            "modrinth": "https://modrinth.com/mod/axolotlclient",
         },
-        {
-            "name": "Redstone Multimeter Fabric",
-            "link": "https://modrinth.com/mod/X6YTb3G1",
-            "working": false
-        }
-    ],
-    "1.12.2": [
-        {
-            "name": "Alternate Current",
-            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
-            "working": true
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Better Doors",
+        "links": {
+            "github": "https://github.com/baraclese/better-doors",
         },
-        {
-            "name": "Don't Clear Chat History",
-            "link": "https://modrinth.com/mod/sUbMm93i",
-            "working": false
+        "working": true,
+        "versions": [ "1.6.4" ]
+    },
+    {
+        "name": "ChromaHudFabric",
+        "links": {
+            "github": "https://github.com/CoolMineman/ChromaHudFabric",
+            "modrinth": "https://modrinth.com/mod/PzuxEnMj",
         },
-        {
-            "name": "Durability Speed (Legacy Backport)",
-            "link": "https://github.com/PseudoDistant/durability-speed/releases",
-            "working": false
+        "working": false,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Don't Clear Chat History",
+        "links": {
+            "github": "https://github.com/wafflecoffee/DCCH",
+            "modrinth": "https://modrinth.com/mod/sUbMm93i",
         },
-        {
-            "name": "Fatal Blow - Legacy Backport",
-            "link": "https://github.com/PseudoDistant/fatal-blow/releases",
-            "working": false
+        "working": false,
+        "versions": [ "1.12.2", "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "Durability Speed (Legacy Backport)",
+        "links": {
+            "github": "https://github.com/PseudoDistant/durability-speed",
         },
-        {
-            "name": "Infinite Water Bucket",
-            "link": "https://modrinth.com/mod/nNMXZUPi",
-            "working": true
+        "working": false,
+        "versions": [ "1.12.2", "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "Ears",
+        "links": {
+            "github": "https://github.com/unascribed/Ears",
+            "modrinth": "https://modrinth.com/mod/mfzaZK3Z",
         },
-        {
-            "name": "Inventory Pause (Cursed)",
-            "link": "https://modrinth.com/mod/pBbOtJk2",
-            "working": false
+        "working": false,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Extended Ingame Hud",
+        "links": {
+            "github": "https://github.com/KingContaria/Extended-Ingame-Hud-1.8",
+            "modrinth": "https://modrinth.com/mod/extended-ingame-hud",
         },
-        {
-            "name": "No More Bleeding Sheep",
-            "link": "https://modrinth.com/mod/HXXsQvqV",
-            "working": false
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "F3ServerInfo",
+        "links": {
+            "github": "https://github.com/creeper123123321/F3ServerInfo",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/f3serverinfo",
         },
-        {
-            "name": "No Enchant Cap (Legacy Backport)",
-            "link": "https://github.com/PseudoDistant/no-enchantment-cap/releases",
-            "working": false
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Fabricated Forge",
+        "links": {
+            "github": "https://github.com/arthurbambou/Fabricated-Legacy-Forge",
+            "modrinth": "https://modrinth.com/mod/fabricated-forge",
         },
-        {
-            "name": "No Recipe Book (Fabric)",
-            "link": "https://modrinth.com/mod/TvL1V8O5",
-            "working": false
+        "working": true,
+        "versions": [ "1.3.2" ]
+    },
+    {
+        "name": "Fatal Blow (Legacy Backport)",
+        "links": {
+            "github": "https://github.com/PseudoDistant/fatal-blow",
         },
-        {
-            "name": "One Block At A Time",
-            "link": "https://modrinth.com/mod/oneblock",
-            "working": true
-        }
-    ],
-    "1.11.2": [
-        {
-            "name": "Alternate Current",
-            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
-            "working": true
-        }
-    ],
-    "1.10.2": [
-        {
-            "name": "Alternate Current",
-            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
-            "working": true
-        }
-    ],
-    "1.9.4": [
-        {
-            "name": "Alternate Current",
-            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
-            "working": true
-        }
-    ],
-    "1.8.9": [
-        {
-            "name": "Alternate Current",
-            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
-            "working": true
+        "working": false,
+        "versions": [ "1.12.2", "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "FOV Effects Scale",
+        "links": {
+            "github": "https://github.com/KingContaria/Fov-Effects-Scale-Mod",
         },
-        {
-            "name": "AnTitanic",
-            "link": "https://github.com/PseudoDistant/AnTitanic/releases",
-            "working": false
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "FPS - Display",
+        "links": {
+            "github": "https://github.com/Grayray75/FPS-Display",
+            "modrinth": "https://modrinth.com/mod/DIlqwRFH",
         },
-        {
-            "name": "AutoGG",
-            "link": "https://modrinth.com/mod/autogg",
-            "working": true
+        "working": false,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Infinte Water Bucket",
+        "links": {
+            "github": "https://github.com/coolsimulations/Infinity-Water-Bucket",
+            "modrinth": "https://modrinth.com/mod/nNMXZUPi",
         },
-        {
-            "name": "AxolotlClient",
-            "link": "https://modrinth.com/mod/axolotlclient",
-            "working": true
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.8.9", "1.7.10", "1.6.4" ]
+    },
+    {
+        "name": "Inventory Pause (Cursed)",
+        "links": {
+            "github": "https://github.com/macbrayne/inventory-pause-cursed",
+            "modrinth": "https://modrinth.com/mod/pBbOtJk2",
         },
-        {
-            "name": "ChromaHudFabric",
-            "link": "https://modrinth.com/mod/PzuxEnMj",
-            "working": false
+        "working": false,
+        "versions": [ "1.12.2" ]
+    },
+    {
+        "name": "Legacy Elytras",
+        "links": {
+            "github": "https://github.com/pixfumy/Legacy-Elytras",
         },
-        {
-            "name": "Don't Clear Chat History",
-            "link": "https://modrinth.com/mod/sUbMm93i",
-            "working": false
+        "working": true,
+        "versions": [ "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "Legacy Extended Hotbar",
+        "links": {
+            "github": "https://github.com/BoogieMonster1O1/ExtendedHotbar",
+            "modrinth": "https://modrinth.com/mod/twG4qbSN",
         },
-        {
-            "name": "Durability Speed (Legacy Backport)",
-            "link": "https://github.com/PseudoDistant/durability-speed/releases",
-            "working": false
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Legacy Mod Menu",
+        "links": {
+            "github": "https://github.com/BoogieMonster1O1/ModMenu",
+            "modrinth": "https://modrinth.com/mod/XzTYkVLx",
         },
-        {
-            "name": "Ears",
-            "link": "https://modrinth.com/mod/mfzaZK3Z",
-            "working": false
+        "working": false,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Legacy VanillaFix",
+        "links": {
+            "github": "https://github.com/YetAnotherMcModder/Legacy-VanillaFix",
+            "modrinth": "https://modrinth.com/mod/kzsy7on5",
         },
-        {
-            "name": "Fatal Blow - Legacy Backport",
-            "link": "https://github.com/PseudoDistant/fatal-blow/releases",
-            "working": false
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "No More Bleeding Sheep",
+        "links": {
+            "github": "https://github.com/OakBricks/no-more-bleeding-sheep",
+            "modrinth": "https://modrinth.com/mod/HXXsQvqV",
         },
-        {
-            "name": "FPS - Display",
-            "link": "https://modrinth.com/mod/DIlqwRFH",
-            "working": false
+        "working": false,
+        "versions": [ "1.13.2", "1.12.2" ]
+    },
+    {
+        "name": "No Enchant Cap (Legacy Backport)",
+        "links": {
+            "github": "https://github.com/PseudoDistant/no-enchantment-cap",
         },
-        {
-            "name": "F3ServerInfo",
-            "link": "https://www.curseforge.com/minecraft/mc-mods/f3serverinfo",
-            "working": true
+        "working": false,
+        "versions": [ "1.12.2", "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "No Recipe Book (Fabric)",
+        "links": {
+            "github": "https://github.com/Grayray75/NoRecipeBook",
+            "modrinth": "https://modrinth.com/mod/TvL1V8O5",
         },
-        {
-            "name": "Infinite Water Bucket",
-            "link": "https://modrinth.com/mod/nNMXZUPi",
-            "working": true
+        "working": false,
+        "versions": [ "1.13.2", "1.12.2" ]
+    },
+    {
+        "name": "Old Block Hit",
+        "links": {
+            "github": "https://github.com/TAKfsg/oldblockhit-legacy-fabric",
         },
-        {
-            "name": "Legacy Elytras",
-            "link": "https://github.com/pixfumy/Legacy-Elytras/releases",
-            "working": true
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "One Block At A Time",
+        "links": {
+            "github": "https://github.com/BleachDev/oneblock",
+            "modrinth": "https://modrinth.com/mod/oneblock",
         },
-        {
-            "name": "Legacy Extended Hotbar",
-            "link": "https://modrinth.com/mod/twG4qbSN",
-            "working": true
+        "working": true,
+        "versions": [ "1.12.2", "1.8.9" ]
+    },
+    {
+        "name": "Optifabric",
+        "links": {
+            "github": "https://github.com/RedLime/OptiFabric-Pre1.9",
         },
-        {
-            "name": "Legacy Mod Menu",
-            "link": "https://modrinth.com/mod/XzTYkVLx",
-            "working": false
+        "working": true,
+        "versions": [ "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "Punch 2 Prime",
+        "links": {
+            "github": "https://github.com/NeRdTheNed/Punch2Prime",
+            "modrinth": "https://modrinth.com/mod/CT5U6tG4",
         },
-        {
-            "name": "Legacy VanillaFix",
-            "link": "https://modrinth.com/mod/kzsy7on5",
-            "working": true
+        "working": false,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Redstone Multimeter Fabric",
+        "links": {
+            "github": "https://github.com/SpaceWalkerRS/redstone-multimeter-fabric",
+            "modrinth": "https://modrinth.com/mod/X6YTb3G1",
         },
-        {
-            "name": "No Enchant Cap (Legacy Backport)",
-            "link": "https://github.com/PseudoDistant/no-enchantment-cap/releases",
-            "working": false
+        "working": false,
+        "versions": [ "1.13.2" ]
+    },
+    {
+        "name": "Show My Hunger",
+        "links": {
+            "github": "https://github.com/KingContaria/Show-My-Hunger",
+            "modrinth": "https://modrinth.com/mod/show-my-hunger",
         },
-        {
-            "name": "Old Block Hit",
-            "link": "https://github.com/TAKfsg/oldblockhit-legacy-fabric/releases",
-            "working": true
+        "working": true,
+        "versions": [ "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4" ]
+    },
+    {
+        "name": "Subtitles backport",
+        "links": {
+            "github": "https://github.com/YetAnotherMcModder/Subtitles-Backport",
         },
-        {
-            "name": "One Block At A Time",
-            "link": "https://modrinth.com/mod/oneblock",
-            "working": true
+        "working": true,
+        "versions": [ "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "ToggleSprint",
+        "links": {
+            "github": "https://codeberg.org/DragonEggBedrockBreaking/ToggleSprint",
+            "modrinth": "https://modrinth.com/mod/togglesprint",
         },
-        {
-            "name": "Optifabric",
-            "link": "https://github.com/RedLime/OptiFabric-Pre1.9/releases",
-            "working": true
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Where-Is-My-Stuff",
+        "links": {
+            "github": "https://github.com/MaheEvil/Where-Is-My-Stuff",
+            "modrinth": "https://modrinth.com/mod/JV1NYdVY",
         },
-        {
-            "name": "Punch 2 Prime",
-            "link": "https://modrinth.com/mod/CT5U6tG4",
-            "working": false
-        },
-        {
-            "name": "Subtitles backport",
-            "link": "https://github.com/YetAnotherMcModder/Subtitles-Backport/releases",
-            "working": true
-        },
-        {
-            "name": "ToggleSprint",
-            "link": "https://modrinth.com/mod/togglesprint",
-            "working": true
-        },
-        {
-            "name": "Where-Is-My-Stuff",
-            "link": "https://modrinth.com/mod/JV1NYdVY",
-            "working": false
-        }
-    ],
-    "1.7.10": [
-        {
-            "name": "Alternate Current",
-            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
-            "working": true
-        },
-        {
-            "name": "AnTitanic",
-            "link": "https://github.com/PseudoDistant/AnTitanic/releases",
-            "working": false
-        },
-        {
-            "name": "Don't Clear Chat History",
-            "link": "https://modrinth.com/mod/sUbMm93i",
-            "working": false
-        },
-        {
-            "name": "Durability Speed (Legacy Backport)",
-            "link": "https://modrinth.com/mod/6852vWRO",
-            "working": false
-        },
-        {
-            "name": "Fatal Blow - Legacy Backport",
-            "link": "https://github.com/PseudoDistant/fatal-blow/releases",
-            "working": false
-        },
-        {
-            "name": "Infinite Water Bucket",
-            "link": "https://modrinth.com/mod/nNMXZUPi",
-            "working": true
-        },
-        {
-            "name": "Legacy-Elytras",
-            "link": "https://github.com/pixfumy/Legacy-Elytras/releases",
-            "working": true
-        },
-        {
-            "name": "No Enchant Cap (Legacy Backport)",
-            "link": "https://github.com/PseudoDistant/no-enchantment-cap/releases",
-            "working": false
-        },
-        {
-            "name": "OptiFabric",
-            "link": "https://github.com/RedLime/OptiFabric-Pre1.9/releases",
-            "working": true
-        },
-        {
-            "name": "Subtitles Backport",
-            "link": "https://github.com/YetAnotherMcModder/Subtitles-Backport/releases",
-            "working": true
-        }
-    ],
-    "1.6.4": [
-        {
-            "name": "Alternate Current",
-            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
-            "working": true
-        },
-        {
-            "name": "Infinite Water Bucket",
-            "link": "https://modrinth.com/mod/nNMXZUPi",
-            "working": true
-        },
-        {
-            "name": "Better Doors",
-            "link": "https://github.com/baraclese/better-doors",
-            "working": true
-        }
-    ],
-    "1.5.2": [
-        {
-            "name": "Alternate Current",
-            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
-            "working": true
-        }
-    ],
-    "1.4.7": [
-        {
-            "name": "Alternate Current",
-            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
-            "working": true
-        }
-    ],
-    "1.3.2": [
-        {
-            "name": "Alternate Current",
-            "link": "https://github.com/SpaceWalkerRS/alternate-current/releases",
-            "working": true
-        },
-        {
-            "name": "Fabricated Forge",
-            "link": "https://modrinth.com/mod/fabricated-forge",
-            "working": true
-        }
-    ]
-};
+        "working": false,
+        "versions": [ "1.8.9" ]
+    },
+];
 
-for (const ver in mods) {
-    console.log("loaded " + mods[ver].length + " mods for " + ver);
+const versions = new Set([].concat.apply([], mods.map(m => m.versions)));
+
+function getModsInVersion(version) {
+    return mods.filter(m => m.versions.includes(version));
 }

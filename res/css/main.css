@@ -25,6 +25,10 @@ h3 {
     margin-top: 20px;
 }
 
+sup, span {
+    color: #bdbdd0;
+}
+
 .page-content {
     padding-top: 90px;
 }

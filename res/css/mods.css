@@ -1,5 +1,6 @@
 label {
     font-size: 18px;
+    font-weight: 600;
 }
 
 select {
@@ -9,4 +10,19 @@ select {
     border: 2px solid #292929;
     border-radius: 4px;
     color: #e0e0e0;
+}
+
+#mods-table td:nth-child(1) {
+    font-weight: 600;
+}
+
+#mods-table td:nth-child(2) {
+    text-align: left;
+    /* max-width: 60px; */
+}
+
+.mod-link {
+    width: 21px;
+    height: 21px;
+    margin: 0 4px;
 }
