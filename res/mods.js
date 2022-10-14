@@ -277,6 +277,14 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
     {
+        "name": "TooManyItems",
+        "links": {
+            "github": "https://github.com/HowardZHY/TooManyItems-LegacyFabric/releases",
+        },
+        "working": true,
+        "versions": [ "1.8.9", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
         "name": "Where-Is-My-Stuff",
         "links": {
             "github": "https://github.com/MaheEvil/Where-Is-My-Stuff",
