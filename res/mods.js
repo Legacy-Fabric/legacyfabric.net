@@ -163,6 +163,15 @@ const mods = [
         "working": true,
         "versions": [ "1.8.9" ]
     },
+        {
+        "name": "Legacy Input Patch",
+        "links": {
+            "github": "https://github.com/HowardZHY/LegacyInputPatch",
+            "modrinth": "https://modrinth.com/mod/legacyinputpatch",
+        },
+        "working": true,
+        "versions": [ "1.8.9", "1.7.10", "1.6.4" ]
+    },
     {
         "name": "Legacy Mod Menu",
         "links": {
