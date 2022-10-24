@@ -34,6 +34,14 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
     {
+        "name": "Babyzombie Drops",
+        "links": {
+            "github": "https://github.com/baraclese/babyzombie-drops",
+        },
+        "working": true,
+        "versions": [ "1.6.4" ]
+    },
+    {
         "name": "Better Doors",
         "links": {
             "github": "https://github.com/baraclese/better-doors",
@@ -191,6 +199,14 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
     {
+        "name": "Missing Vanilla Recipes",
+        "links": {
+            "github": "https://github.com/baraclese/missing-vanilla-recipes",
+        },
+        "working": true,
+        "versions": [ "1.6.4" ]
+    },
+    {
         "name": "No More Bleeding Sheep",
         "links": {
             "github": "https://github.com/OakBricks/no-more-bleeding-sheep",
@@ -293,6 +309,14 @@ const mods = [
         },
         "working": false,
         "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Zombie Lag Fix",
+        "links": {
+            "github": "https://github.com/baraclese/zombie-lag-fix",
+        },
+        "working": true,
+        "versions": [ "1.6.4" ]
     },
 ];
 
