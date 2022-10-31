@@ -207,6 +207,15 @@ const mods = [
         "versions": [ "1.6.4" ]
     },
     {
+        "name": "Modern KeyBinding",
+        "links": {
+            "github": "https://github.com/Nova-Committee/ModernKeyBinding",
+            "modrinth": "https://modrinth.com/mod/modernkeybinding"
+        },
+        "working": true,
+        "versions": [ "1.7.10", "1.8.9" ]
+    },
+    {
         "name": "No More Bleeding Sheep",
         "links": {
             "github": "https://github.com/OakBricks/no-more-bleeding-sheep",
