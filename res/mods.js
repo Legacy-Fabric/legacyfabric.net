@@ -178,7 +178,7 @@ const mods = [
             "modrinth": "https://modrinth.com/mod/legacyinputpatch",
         },
         "working": true,
-        "versions": [ "1.8.9", "1.7.10", "1.6.4" ]
+        "versions": [ "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "Legacy Mod Menu",
