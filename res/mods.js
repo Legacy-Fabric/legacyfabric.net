@@ -24,7 +24,7 @@ const mods = [
         "working": true,
         "versions": [ "1.8.9" ]
     },
-        {
+    {
         "name": "AutoTechno",
         "links": {
             "github": "https://github.com/ZtereoHYPE/AutoTechno",
