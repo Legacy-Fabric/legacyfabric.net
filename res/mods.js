@@ -24,6 +24,15 @@ const mods = [
         "working": true,
         "versions": [ "1.8.9" ]
     },
+        {
+        "name": "AutoTechno",
+        "links": {
+            "github": "https://github.com/ZtereoHYPE/AutoTechno",
+            "modrinth": "https://modrinth.com/mod/autotechno",
+        },
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
     {
         "name": "AxolotlClient",
         "links": {
