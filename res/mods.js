@@ -224,6 +224,15 @@ const mods = [
         "versions": [ "1.6.4" ]
     },
     {
+        "name": "NextSpring",
+        "links": {
+            "github": "https://github.com/Nova-Committee/NextSpring/tree/Fabric-Legacy/1.8.9",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/nextspring-fabric",
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
         "name": "Modern KeyBinding",
         "links": {
             "github": "https://github.com/Nova-Committee/ModernKeyBinding",
