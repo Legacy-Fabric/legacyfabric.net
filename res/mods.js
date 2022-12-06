@@ -302,6 +302,15 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
     {
+        "name": "QuickPlant",
+        "links": {
+            "github": "https://github.com/Nova-Committee/QuickPlant/tree/Fabric-Legacy/1.8.9",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/quickplant-fabric",
+        },
+        "working": true,
+        "versions": [ "1.8.9", "1.7.10" ]
+    },
+    {
         "name": "Redstone Multimeter Fabric",
         "links": {
             "github": "https://github.com/SpaceWalkerRS/redstone-multimeter-fabric",
