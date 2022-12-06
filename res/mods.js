@@ -25,6 +25,15 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
     {
+        "name": "AutoTechno",
+        "links": {
+            "github": "https://github.com/ZtereoHYPE/AutoTechno",
+            "modrinth": "https://modrinth.com/mod/autotechno",
+        },
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
         "name": "AxolotlClient",
         "links": {
             "github": "https://github.com/AxolotlClient",
@@ -57,6 +66,14 @@ const mods = [
         },
         "working": false,
         "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Custom Skin Loader",
+        "links": {
+            "github": "https://github.com/HowardZHY/CustomSkinLoader-LegacyFabric",
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
     },
     {
         "name": "Don't Clear Chat History",
@@ -207,6 +224,15 @@ const mods = [
         "versions": [ "1.6.4" ]
     },
     {
+        "name": "NextSpring",
+        "links": {
+            "github": "https://github.com/Nova-Committee/NextSpring/tree/Fabric-Legacy/1.8.9",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/nextspring-fabric",
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
         "name": "Modern KeyBinding",
         "links": {
             "github": "https://github.com/Nova-Committee/ModernKeyBinding",
@@ -264,7 +290,7 @@ const mods = [
             "github": "https://github.com/RedLime/OptiFabric-Pre1.9",
         },
         "working": true,
-        "versions": [ "1.8.9", "1.7.10" ]
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
     },
     {
         "name": "Punch 2 Prime",
@@ -274,6 +300,15 @@ const mods = [
         },
         "working": false,
         "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "QuickPlant",
+        "links": {
+            "github": "https://github.com/Nova-Committee/QuickPlant/tree/Fabric-Legacy/1.8.9",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/quickplant-fabric",
+        },
+        "working": true,
+        "versions": [ "1.8.9", "1.7.10" ]
     },
     {
         "name": "Redstone Multimeter Fabric",
