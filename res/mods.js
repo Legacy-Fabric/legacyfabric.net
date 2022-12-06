@@ -290,7 +290,7 @@ const mods = [
             "github": "https://github.com/RedLime/OptiFabric-Pre1.9",
         },
         "working": true,
-        "versions": [ "1.8.9", "1.7.10" ]
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
     },
     {
         "name": "Punch 2 Prime",
