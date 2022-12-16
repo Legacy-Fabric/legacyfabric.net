@@ -154,6 +154,15 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
     {
+        "name": "FPS Plus",
+        "links": {
+            "github": "https://github.com/HowardZHY/FPS-Plus",
+            "modrinth": "https://modrinth.com/mod/fpspluslf",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
         "name": "Infinte Water Bucket",
         "links": {
             "github": "https://github.com/coolsimulations/Infinity-Water-Bucket",
@@ -285,7 +294,7 @@ const mods = [
         "versions": [ "1.12.2", "1.8.9" ]
     },
     {
-        "name": "Optifabric",
+        "name": "OptifabricLegacy",
         "links": {
             "github": "https://github.com/RedLime/OptiFabric-Pre1.9",
         },
