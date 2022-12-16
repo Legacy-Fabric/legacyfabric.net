@@ -285,7 +285,7 @@ const mods = [
         "versions": [ "1.12.2", "1.8.9" ]
     },
     {
-        "name": "Optifabric",
+        "name": "OptifabricLegacy",
         "links": {
             "github": "https://github.com/RedLime/OptiFabric-Pre1.9",
         },
