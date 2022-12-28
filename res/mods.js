@@ -212,7 +212,7 @@ const mods = [
             "github": "https://github.com/BoogieMonster1O1/ModMenu",
             "modrinth": "https://modrinth.com/mod/XzTYkVLx",
         },
-        "working": false,
+        "working": true,
         "versions": [ "1.8.9" ]
     },
     {
