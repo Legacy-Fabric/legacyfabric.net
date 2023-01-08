@@ -126,7 +126,7 @@ const mods = [
             "modrinth": "https://modrinth.com/mod/fabricated-forge",
         },
         "working": true,
-        "versions": [ "1.3.2" ]
+        "versions": [ "1.3.2", "1.4", "1.4.1", "1.4.2" ]
     },
     {
         "name": "Fatal Blow (Legacy Backport)",
