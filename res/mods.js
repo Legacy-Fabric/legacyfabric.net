@@ -126,7 +126,7 @@ const mods = [
             "modrinth": "https://modrinth.com/mod/fabricated-forge",
         },
         "working": true,
-        "versions": [ "1.3.2", "1.4", "1.4.1", "1.4.2" ]
+        "versions": [ "1.4.2", "1.4.1", "1.4", "1.3.2" ]
     },
     {
         "name": "Fatal Blow (Legacy Backport)",
@@ -373,7 +373,8 @@ const mods = [
     },
 ];
 
-const versions = new Set([].concat.apply([], mods.map(m => m.versions)));
+// Get all listed versions, sort them then remove duplicates
+const versions = new Set(mods.map(m => m.versions).flat().sort((a, b) => b.localeCompare(a, undefined, { numeric:true })));
 
 function getModsInVersion(version) {
     return mods.filter(m => m.versions.includes(version));
