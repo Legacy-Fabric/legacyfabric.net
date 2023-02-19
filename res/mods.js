@@ -16,7 +16,7 @@ const mods = [
         "versions": [ "1.8.9", "1.7.10" ]
     },
     {
-        "name": "Atum (Random and set seed autoresetter)",
+        "name": "Atum(Autoresetter)",
         "links": {
             "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-atum-1.8.9",
         },
