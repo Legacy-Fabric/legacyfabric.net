@@ -240,6 +240,14 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
     {
+        "name": "LegacyPlanarFog",
+        "links": {
+            "github": "https://github.com/RedLime/LegacyPlanarFog",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
         "name": "Legacy VanillaFix",
         "links": {
             "github": "https://github.com/YetAnotherMcModder/Legacy-VanillaFix",
@@ -362,6 +370,14 @@ const mods = [
         "versions": [ "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4" ]
     },
     {
+        "name": "SleepBackground",
+        "links": {
+            "github": "https://github.com/RedLime/SpeedRunIGT",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
+    },
+    {
         "name": "SpeedRunIGT",
         "links": {
             "github": "https://github.com/RedLime/SpeedRunIGT",
@@ -370,12 +386,36 @@ const mods = [
         "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4" ]
     },
     {
+        "name": "StandardSettings",
+        "links": {
+            "github": "https://github.com/KingContaria/StandardSettings",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "StatsPerWorld",
+        "links": {
+            "github": "https://github.com/RedLime/StatsPerWorld",
+        },
+        "working": true,
+        "versions": [ "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
         "name": "Subtitles backport",
         "links": {
             "github": "https://github.com/YetAnotherMcModder/Subtitles-Backport",
         },
         "working": true,
         "versions": [ "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "TabFocus",
+        "links": {
+            "github": "https://github.com/RedLime/TabFocus",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "ToggleSprint",
@@ -393,6 +433,14 @@ const mods = [
             "modrinth": "https://modrinth.com/mod/JV1NYdVY",
         },
         "working": false,
+        "versions": [ "1.8.9" ]
+    },
+        {
+        "name": "WorldPreview1.8.9",
+        "links": {
+            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-worldpreview-1.8.9",
+        },
+        "working": true,
         "versions": [ "1.8.9" ]
     },
     {
