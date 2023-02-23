@@ -16,6 +16,14 @@ const mods = [
         "versions": [ "1.8.9", "1.7.10" ]
     },
     {
+        "name": "Atum",
+        "links": {
+            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-atum-1.8.9",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
+    },
+    {
         "name": "AutoGG",
         "links": {
             "github": "https://gitlab.com/DragonEggBedrockBreaking/AutoGG",
@@ -93,6 +101,14 @@ const mods = [
         "versions": [ "1.12.2", "1.8.9", "1.7.10" ]
     },
     {
+        "name": "Dynamic FPS Legacy",
+        "links": {
+            "github": "https://github.com/RedLime/Pre1.9-Dynamic-FPS",
+        },
+        "working": true,
+        "versions": [ "1.8.9", "1.7.10" ]
+    },
+    {
         "name": "Ears",
         "links": {
             "github": "https://github.com/unascribed/Ears",
@@ -126,7 +142,7 @@ const mods = [
             "modrinth": "https://modrinth.com/mod/fabricated-forge",
         },
         "working": true,
-        "versions": [ "1.4.2", "1.4.1", "1.4", "1.3.2" ]
+        "versions": [ "1.4.7", "1.4.6", "1.4.5", "1.4.4", "1.4.3", "1.4.2", "1.4.1", "1.4.0", "1.3.2" ]
     },
     {
         "name": "Fatal Blow (Legacy Backport)",
@@ -143,6 +159,14 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Force Port Mod",
+        "links": {
+            "github": "https://github.com/marinersfan824/Force-Port-Mod",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9" ]
     },
     {
         "name": "FPS - Display",
@@ -214,6 +238,14 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "LegacyPlanarFog",
+        "links": {
+            "github": "https://github.com/RedLime/LegacyPlanarFog",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "Legacy VanillaFix",
@@ -338,12 +370,52 @@ const mods = [
         "versions": [ "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4" ]
     },
     {
+        "name": "SleepBackground",
+        "links": {
+            "github": "https://github.com/RedLime/SpeedRunIGT",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "SpeedRunIGT",
+        "links": {
+            "github": "https://github.com/RedLime/SpeedRunIGT",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4" ]
+    },
+    {
+        "name": "StandardSettings",
+        "links": {
+            "github": "https://github.com/KingContaria/StandardSettings",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "StatsPerWorld",
+        "links": {
+            "github": "https://github.com/RedLime/StatsPerWorld",
+        },
+        "working": true,
+        "versions": [ "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
         "name": "Subtitles backport",
         "links": {
             "github": "https://github.com/YetAnotherMcModder/Subtitles-Backport",
         },
         "working": true,
         "versions": [ "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "TabFocus",
+        "links": {
+            "github": "https://github.com/RedLime/TabFocus",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "ToggleSprint",
@@ -361,6 +433,14 @@ const mods = [
             "modrinth": "https://modrinth.com/mod/JV1NYdVY",
         },
         "working": false,
+        "versions": [ "1.8.9" ]
+    },
+        {
+        "name": "WorldPreview",
+        "links": {
+            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-worldpreview-1.8.9",
+        },
+        "working": true,
         "versions": [ "1.8.9" ]
     },
     {
