@@ -16,7 +16,7 @@ const mods = [
         "versions": [ "1.8.9", "1.7.10" ]
     },
     {
-        "name": "Atum(Autoresetter)",
+        "name": "Atum",
         "links": {
             "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-atum-1.8.9",
         },
@@ -163,7 +163,7 @@ const mods = [
     {
         "name": "Force Port Mod",
         "links": {
-            "github": "https://github.com/marinersfan824/Force-Port-Mod/tree/main",
+            "github": "https://github.com/marinersfan824/Force-Port-Mod",
         },
         "working": true,
         "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9" ]
@@ -436,7 +436,7 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
         {
-        "name": "WorldPreview1.8.9",
+        "name": "WorldPreview",
         "links": {
             "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-worldpreview-1.8.9",
         },
