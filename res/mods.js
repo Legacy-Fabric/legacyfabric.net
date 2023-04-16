@@ -93,7 +93,7 @@ const mods = [
         "versions": [ "1.12.2", "1.8.9", "1.7.10" ]
     },
     {
-        "name": "Durability Speed (Legacy Backport)",
+        "name": "Durability Speed",
         "links": {
             "github": "https://github.com/PseudoDistant/durability-speed",
         },
@@ -101,7 +101,7 @@ const mods = [
         "versions": [ "1.12.2", "1.8.9", "1.7.10" ]
     },
     {
-        "name": "Dynamic FPS Legacy",
+        "name": "Dynamic FPS",
         "links": {
             "github": "https://github.com/RedLime/Pre1.9-Dynamic-FPS",
         },
@@ -115,6 +115,15 @@ const mods = [
             "modrinth": "https://modrinth.com/mod/mfzaZK3Z",
         },
         "working": false,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Extended Hotbar",
+        "links": {
+            "github": "https://github.com/BoogieMonster1O1/ExtendedHotbar",
+            "modrinth": "https://modrinth.com/mod/twG4qbSN",
+        },
+        "working": true,
         "versions": [ "1.8.9" ]
     },
     {
@@ -145,7 +154,7 @@ const mods = [
         "versions": [ "1.4.7", "1.4.6", "1.4.5", "1.4.4", "1.4.3", "1.4.2", "1.4.1", "1.4.0", "1.3.2" ]
     },
     {
-        "name": "Fatal Blow (Legacy Backport)",
+        "name": "Fatal Blow",
         "links": {
             "github": "https://github.com/PseudoDistant/fatal-blow",
         },
@@ -213,15 +222,6 @@ const mods = [
         "versions": [ "1.8.9", "1.7.10" ]
     },
     {
-        "name": "Legacy Extended Hotbar",
-        "links": {
-            "github": "https://github.com/BoogieMonster1O1/ExtendedHotbar",
-            "modrinth": "https://modrinth.com/mod/twG4qbSN",
-        },
-        "working": true,
-        "versions": [ "1.8.9" ]
-    },
-        {
         "name": "Legacy Input Patch",
         "links": {
             "github": "https://github.com/HowardZHY/LegacyInputPatch",
@@ -229,15 +229,6 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
-    },
-    {
-        "name": "Legacy Mod Menu",
-        "links": {
-            "github": "https://github.com/BoogieMonster1O1/ModMenu",
-            "modrinth": "https://modrinth.com/mod/XzTYkVLx",
-        },
-        "working": true,
-        "versions": [ "1.8.9" ]
     },
     {
         "name": "LegacyPlanarFog",
@@ -263,6 +254,15 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.6.4" ]
+    },
+    {
+        "name": "Mod Menu",
+        "links": {
+            "github": "https://github.com/BoogieMonster1O1/ModMenu",
+            "modrinth": "https://modrinth.com/mod/XzTYkVLx",
+        },
+        "working": true,
+        "versions": [ "1.8.9" ]
     },
     {
         "name": "NextSpring",
@@ -292,7 +292,7 @@ const mods = [
         "versions": [ "1.13.2", "1.12.2" ]
     },
     {
-        "name": "No Enchant Cap (Legacy Backport)",
+        "name": "No Enchant Cap",
         "links": {
             "github": "https://github.com/PseudoDistant/no-enchantment-cap",
         },
@@ -326,7 +326,7 @@ const mods = [
         "versions": [ "1.12.2", "1.8.9" ]
     },
     {
-        "name": "OptifabricLegacy",
+        "name": "Optifabric",
         "links": {
             "github": "https://github.com/RedLime/OptiFabric-Pre1.9",
         },
