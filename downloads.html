@@ -32,10 +32,31 @@
         <div id="installer-container">
             <h2>Installers</h2>
             <p>For the normal minecraft launcher and MultiMC</p>
-
-            <!-- todo: dynamically determine the version either through parsing the maven or the meta -->
-            <a href="https://maven.legacyfabric.net/net/legacyfabric/fabric-installer/0.11.1/fabric-installer-0.11.1.exe"><button class="download-button">Download .exe <br> (for windows)</button></a>
-            <a href="https://maven.legacyfabric.net/net/legacyfabric/fabric-installer/0.11.1/fabric-installer-0.11.1.jar"><button class="download-button">Download .jar <br> (universal)</button></a>
+            <a href="https://maven.legacyfabric.net/net/legacyfabric/fabric-installer/0.11.1/fabric-installer-0.11.1.exe" id="installer-exe"><button class="download-button">Download .exe <br> (for windows)</button></a>
+            <a href="https://maven.legacyfabric.net/net/legacyfabric/fabric-installer/0.11.1/fabric-installer-0.11.1.jar" id="installer-jar"><button class="download-button">Download .jar <br> (universal)</button></a>
             <a href="https://github.com/Legacy-Fabric/multimc-instance-creator/releases"><button class="download-button">MultiMC <br> instances</button></a>
 </body>
+<script>
+    var fallback = "0.12323.1"
+    function setLatestMeta() {
+        var latest
+        fetch("https://meta.legacyfabric.net/v2/versions/installer")
+        .then(function(response) {
+            return response.json()
+        }).then(function(json) {
+            // the first in the array is supposed to be the latest
+            // todo: some sanity check to ensure its a real version
+            latest = json[0]["version"]
+            document.getElementById("installer-exe").href = "https://maven.legacyfabric.net/net/legacyfabric/fabric-installer/" + latest + "/fabric-installer-" + latest + ".exe"
+            document.getElementById("installer-jar").href = "https://maven.legacyfabric.net/net/legacyfabric/fabric-installer/" + latest + "/fabric-installer-" + latest + ".jar"
+        }).catch(function(err) {
+            console.error("couldn't determine latest version; using fallback " + fallback)
+            
+            latest = fallback
+            document.getElementById("installer-exe").href = "https://maven.legacyfabric.net/net/legacyfabric/fabric-installer/" + latest + "/fabric-installer-" + latest + ".exe"
+            document.getElementById("installer-jar").href = "https://maven.legacyfabric.net/net/legacyfabric/fabric-installer/" + latest + "/fabric-installer-" + latest + ".jar"
+        })
+    }
+    setLatestMeta()
+</script>
 </html>
