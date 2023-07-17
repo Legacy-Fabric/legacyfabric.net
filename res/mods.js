@@ -256,6 +256,15 @@ const mods = [
         "versions": [ "1.6.4" ]
     },
     {
+        "name": "Mod Loading Screen",
+        "links": {
+            "modrinth": "https://modrinth.com/mod/mod-loading-screen",
+            "github": "https://github.com/Gaming32/mod-loading-screen",
+        },
+        "working": true
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
         "name": "Mod Menu",
         "links": {
             "github": "https://github.com/BoogieMonster1O1/ModMenu",
@@ -450,15 +459,6 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.6.4" ]
-    },
-    {
-        "name": "Mod Loading Screen",
-        "links": {
-            "modrinth": "https://modrinth.com/mod/mod-loading-screen",
-            "github": "https://github.com/Gaming32/mod-loading-screen",
-        },
-        "working": true
-        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
 ];
 
