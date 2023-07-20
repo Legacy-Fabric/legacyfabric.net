@@ -181,9 +181,9 @@ const mods = [
         "name": "FPS - Display",
         "links": {
             "github": "https://github.com/Grayray75/FPS-Display",
-            "modrinth": "https://modrinth.com/mod/DIlqwRFH",
+            "modrinth": "https://modrinth.com/mod/fpsdisplay",
         },
-        "working": false,
+        "working": true,
         "versions": [ "1.8.9" ]
     },
     {
@@ -309,12 +309,12 @@ const mods = [
         "versions": [ "1.12.2", "1.8.9", "1.7.10" ]
     },
     {
-        "name": "No Recipe Book (Fabric)",
+        "name": "No Recipe Book",
         "links": {
             "github": "https://github.com/Grayray75/NoRecipeBook",
-            "modrinth": "https://modrinth.com/mod/TvL1V8O5",
+            "modrinth": "https://modrinth.com/mod/norecipebook-fabric",
         },
-        "working": false,
+        "working": true,
         "versions": [ "1.13.2", "1.12.2" ]
     },
     {
