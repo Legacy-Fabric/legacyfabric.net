@@ -18,10 +18,26 @@ const mods = [
     {
         "name": "Atum",
         "links": {
+            "github": "https://github.com/VoidXWalker/Atum",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4" ]
+    },
+    {
+        "name": "Atum",
+        "links": {
             "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-atum-1.8.9",
         },
         "working": true,
-        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Atum",
+        "links": {
+            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-atum-1.7.10",
+        },
+        "working": true,
+        "versions": [ "1.7.10" ]
     },
     {
         "name": "AutoGG",
