@@ -247,7 +247,7 @@ const mods = [
             "modrinth": "https://modrinth.com/mod/itemless",
         },
         "working": true,
-        "versions": [ "1.3.2", "1.4.7", "1.5.2" ]
+        "versions": [ "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "Legacy Elytras",
