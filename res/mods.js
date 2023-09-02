@@ -448,6 +448,38 @@ const mods = [
         "versions": [ "1.13.2" ]
     },
     {
+        "name": "Set Spawn",
+        "links": {
+            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-set-spawn-1.9-1.12.2",
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4" ]
+    },
+    {
+        "name": "Set Spawn",
+        "links": {
+            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-set-spawn-1.8-1.8.9",
+        },
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Set Spawn",
+        "links": {
+            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-set-spawn-1.7.10",
+        },
+        "working": true,
+        "versions": [ "1.7.10" ]
+    },
+    {
+        "name": "Set Spawn",
+        "links": {
+            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-set-spawn-1.6.4",
+        },
+        "working": true,
+        "versions": [ "1.6.4" ]
+    },
+    {
         "name": "Show My Hunger",
         "links": {
             "github": "https://github.com/KingContaria/Show-My-Hunger",
