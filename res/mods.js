@@ -1,3 +1,14 @@
+// template:
+// {
+//     "name": "",
+//     "links": {
+//         "github": "",
+//         "modrinth": ""
+//     },
+//     "working": true,
+//     "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+// },
+
 const mods = [
     {
         "name": "Alternate Current",
@@ -67,6 +78,15 @@ const mods = [
         "versions": [ "1.6.4" ]
     },
     {
+        "name": "Custom Map Resetter",
+        "links": {
+            "github": "https://github.com/tildejustin/custom-map-resetter",
+            "modrinth": "https://modrinth.com/mod/custom-map-resetter"
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
         "name": "ChromaHudFabric",
         "links": {
             "github": "https://github.com/CoolMineman/ChromaHudFabric",
@@ -74,6 +94,15 @@ const mods = [
         },
         "working": false,
         "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "CTM SpeedrunIGT Integration",
+        "links": {
+            "github": "https://github.com/tildejustin/ctm-srigt-integration",
+            "modrinth": "https://modrinth.com/mod/ctm-speedrunigt-integration"
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
     },
     {
         "name": "Custom Skin Loader",
@@ -196,6 +225,15 @@ const mods = [
         "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
+        "name": "Half-Heart Hardcore",
+        "links": {
+            "github": "https://github.com/tildejustin/half-heart-hardcore",
+            "modrinth": "https://modrinth.com/mod/half-heart-hardcore"
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
         "name": "Infinte Water Bucket",
         "links": {
             "github": "https://github.com/coolsimulations/Infinity-Water-Bucket",
@@ -214,6 +252,15 @@ const mods = [
         "versions": [ "1.12.2" ]
     },
     {
+        "name": "Itemless",
+        "links": {
+            "github": "https://github.com/tildejustin/itemless",
+            "modrinth": "https://modrinth.com/mod/itemless",
+        },
+        "working": true,
+        "versions": [ "1.3.2", "1.4.7", "1.5.2" ]
+    },
+    {
         "name": "Legacy Elytras",
         "links": {
             "github": "https://github.com/pixfumy/Legacy-Elytras",
@@ -229,6 +276,15 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
+        "name": "Legacy motioNO",
+        "links": {
+            "github": "https://github.com/tildejustin/legacy-motioNO",
+            "modrinth": "https://modrinth.com/mod/legacy-motioNO"
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "LegacyPlanarFog",
@@ -309,6 +365,15 @@ const mods = [
         "versions": [ "1.12.2", "1.8.9", "1.7.10" ]
     },
     {
+        "name": "No Paus",
+        "links": {
+            "github": "https://github.com/tildejustin/no-paus",
+            "modrinth": "https://modrinth.com/mod/no-paus"
+        },
+        "working": true,
+        "versions": [ "1.3.2" ]
+    },
+    {
         "name": "No Recipe Book",
         "links": {
             "github": "https://github.com/Grayray75/NoRecipeBook",
@@ -341,6 +406,14 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "Optifabric",
+        "links": {
+            "github": "https://github.com/tildejustin/OptiFabric-1.0-1.7"
+        },
+        "working": true,
+        "versions": [ "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "Punch 2 Prime",
@@ -381,7 +454,7 @@ const mods = [
     {
         "name": "SleepBackground",
         "links": {
-            "github": "https://github.com/RedLime/SpeedRunIGT",
+            "github": "https://github.com/RedLime/SleepBackground",
         },
         "working": true,
         "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
@@ -390,9 +463,10 @@ const mods = [
         "name": "SpeedRunIGT",
         "links": {
             "github": "https://github.com/RedLime/SpeedRunIGT",
+            "modrinth": "https://modrinth.com/mod/SpeedRunIGT"
         },
         "working": true,
-        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4" ]
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
     },
     {
         "name": "StandardSettings",
@@ -425,6 +499,15 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
+        "name": "TNT Drop All",
+        "links": {
+            "github": "https://github.com/tildejustin/tnt-drop-all",
+            "modrinth": "https://modrinth.com/mod/tnt-drop-all"
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9" ]
     },
     {
         "name": "ToggleSprint",
