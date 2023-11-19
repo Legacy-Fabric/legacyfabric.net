@@ -230,6 +230,14 @@ const mods = [
         "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
+        "name": "Freemetics",
+        "links": {
+            "github": "https://codeberg.org/fineless71/Freemetics"
+        },
+        "working": true,
+        "versions": [ "1.7.10", "1.8.9" ]
+    },
+    {
         "name": "Half-Heart Hardcore",
         "links": {
             "github": "https://github.com/tildejustin/half-heart-hardcore",
@@ -341,6 +349,14 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Mop Menu",
+        "links": {
+            "github": "https://codeberg.org/fineless71/MopMenu"
+        },
+        "working": true,
+        "versions": [ "1.7.10", "1.8.9" ]
     },
     {
         "name": "NextSpring",
