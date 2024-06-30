@@ -356,7 +356,7 @@ const mods = [
             "github": "https://codeberg.org/fineless71/MopMenu"
         },
         "working": true,
-        "versions": [ "1.7.10", "1.8.9" ]
+        "versions": [ "1.7.10", "1.8.9", "1.9.4", "1.10.2", "1.11.2" ]
     },
     {
         "name": "NextSpring",
