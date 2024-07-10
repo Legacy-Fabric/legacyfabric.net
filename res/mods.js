@@ -75,6 +75,14 @@ const mods = [
         "versions": [ "1.6.4" ]
     },
     {
+        "name": "Bedwars Stats",
+        "links": {
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/bedwarsstats",
+        },
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
         "name": "Better Doors",
         "links": {
             "github": "https://github.com/baraclese/better-doors",
