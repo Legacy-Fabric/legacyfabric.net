@@ -429,6 +429,14 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
     {
+        "name": "Oldium",
+        "links": {
+            "github": "https://github.com/OldiumMC/oldium",
+        },
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
         "name": "One Block At A Time",
         "links": {
             "github": "https://github.com/BleachDev/oneblock",
