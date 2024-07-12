@@ -426,7 +426,7 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.8.9" ]
-    }
+    },
     {
         "name": "One Block At A Time",
         "links": {
