@@ -326,6 +326,15 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
     {
+        "name": "LetMeSpeak",
+        "links": {
+            "github": "https://github.com/spacebytee/LetMeSpeak",
+            "modrinth": "https://modrinth.com/mod/letmespeak",
+        },
+        "working": true,
+        "versions": [ "1.7.10", "1.8.9", "1.12.2" ]
+    },
+    {
         "name": "Loafy",
         "links": {
             "github": "https://github.com/MCLegoMan/loafy",
