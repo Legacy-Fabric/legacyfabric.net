@@ -16,6 +16,14 @@ const mods = [
         "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4" ]
     },
     {
+        "name": "Atum",
+        "links": {
+            "github": "https://github.com/tildejustin/atum",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4" ]
+    },
+    {
         "name": "AutoGG",
         "links": {
             "modrinth": "https://modrinth.com/mod/autogg",
@@ -267,6 +275,7 @@ const mods = [
     {
         "name": "Legacy motioNO",
         "links": {
+            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/motiono",
             "modrinth": "https://modrinth.com/mod/legacy-motioNO"
         },
         "working": true,
@@ -461,6 +470,14 @@ const mods = [
         "versions": [ "1.13.2" ]
     },
     {
+        "name": "Set Spawn",
+        "links": {
+            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/set-spawn",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.3.2" ]
+    },
+    {
         "name": "Show My Hunger",
         "links": {
             "github": "https://github.com/KingContaria/Show-My-Hunger",
@@ -542,6 +559,14 @@ const mods = [
             "modrinth": "https://modrinth.com/mod/JV1NYdVY",
         },
         "working": false,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "WorldPreview",
+        "links": {
+            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/worldpreview",
+        },
+        "working": true,
         "versions": [ "1.8.9" ]
     },
     {
