@@ -8,14 +8,6 @@ const mods = [
         "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
-        "name": "AnTitanic",
-        "links": {
-            "github": "https://github.com/PseudoDistant/AnTitanic",
-        },
-        "working": false,
-        "versions": [ "1.8.9", "1.7.10" ]
-    },
-    {
         "name": "Atum",
         "links": {
             "github": "https://github.com/VoidXWalker/Atum",
@@ -24,25 +16,8 @@ const mods = [
         "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4" ]
     },
     {
-        "name": "Atum",
-        "links": {
-            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-atum-1.8.9",
-        },
-        "working": true,
-        "versions": [ "1.8.9" ]
-    },
-    {
-        "name": "Atum",
-        "links": {
-            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-atum-1.7.10",
-        },
-        "working": true,
-        "versions": [ "1.7.10" ]
-    },
-    {
         "name": "AutoGG",
         "links": {
-            "github": "https://gitlab.com/DragonEggBedrockBreaking/AutoGG",
             "modrinth": "https://modrinth.com/mod/autogg",
         },
         "working": true,
@@ -73,15 +48,6 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.6.4" ]
-    },
-    {
-        "name": "Bedwars Stats",
-        "links": {
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/bedwarsstats",
-            "modrinth": "https://modrinth.com/mod/bedwars-stats",
-        },
-        "working": true,
-        "versions": [ "1.8.9" ]
     },
     {
         "name": "Better Doors",
@@ -129,7 +95,6 @@ const mods = [
     {
         "name": "Don't Clear Chat History",
         "links": {
-            "github": "https://github.com/wafflecoffee/DCCH",
             "modrinth": "https://modrinth.com/mod/sUbMm93i",
         },
         "working": false,
@@ -302,7 +267,6 @@ const mods = [
     {
         "name": "Legacy motioNO",
         "links": {
-            "github": "https://github.com/tildejustin/legacy-motioNO",
             "modrinth": "https://modrinth.com/mod/legacy-motioNO"
         },
         "working": true,
@@ -424,7 +388,6 @@ const mods = [
         "name": "No Recipe Book",
         "links": {
             "github": "https://github.com/Grayray75/NoRecipeBook",
-            "modrinth": "https://modrinth.com/mod/norecipebook-fabric",
         },
         "working": true,
         "versions": [ "1.13.2", "1.12.2" ]
@@ -498,38 +461,6 @@ const mods = [
         "versions": [ "1.13.2" ]
     },
     {
-        "name": "Set Spawn",
-        "links": {
-            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-set-spawn-1.9-1.12.2",
-        },
-        "working": true,
-        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4" ]
-    },
-    {
-        "name": "Set Spawn",
-        "links": {
-            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-set-spawn-1.8-1.8.9",
-        },
-        "working": true,
-        "versions": [ "1.8.9" ]
-    },
-    {
-        "name": "Set Spawn",
-        "links": {
-            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-set-spawn-1.7.10",
-        },
-        "working": true,
-        "versions": [ "1.7.10" ]
-    },
-    {
-        "name": "Set Spawn",
-        "links": {
-            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-set-spawn-1.6.4",
-        },
-        "working": true,
-        "versions": [ "1.6.4" ]
-    },
-    {
         "name": "Show My Hunger",
         "links": {
             "github": "https://github.com/KingContaria/Show-My-Hunger",
@@ -599,7 +530,6 @@ const mods = [
     {
         "name": "ToggleSprint",
         "links": {
-            "github": "https://codeberg.org/DragonEggBedrockBreaking/ToggleSprint",
             "modrinth": "https://modrinth.com/mod/togglesprint",
         },
         "working": true,
@@ -612,14 +542,6 @@ const mods = [
             "modrinth": "https://modrinth.com/mod/JV1NYdVY",
         },
         "working": false,
-        "versions": [ "1.8.9" ]
-    },
-        {
-        "name": "WorldPreview",
-        "links": {
-            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-worldpreview-1.8.9",
-        },
-        "working": true,
         "versions": [ "1.8.9" ]
     },
     {
