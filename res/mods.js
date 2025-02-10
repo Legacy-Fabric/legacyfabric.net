@@ -1,5 +1,14 @@
 const mods = [
     {
+        "name": "Achievement Fix",
+        "links": {
+            "github": "https://github.com/tildejustin/achievement-fix",
+            "modrinth": "https://modrinth.com/mod/achievement-fix"
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.7.10", "1.5.2", "1.4.7" ]
+    },
+    {
         "name": "Alternate Current",
         "links": {
             "github": "https://github.com/SpaceWalkerRS/alternate-current",
@@ -8,12 +17,12 @@ const mods = [
         "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
-        "name": "Atum",
+        "name": "Anchiale",
         "links": {
-            "github": "https://github.com/VoidXWalker/Atum",
+            "github": "https://github.com/minecraft-Java-Edition-Speedrunning/anchiale",
         },
         "working": true,
-        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4" ]
+        "versions": [ "1.8.9" ]
     },
     {
         "name": "Atum",
@@ -66,15 +75,6 @@ const mods = [
         "versions": [ "1.6.4" ]
     },
     {
-        "name": "Custom Map Resetter",
-        "links": {
-            "github": "https://github.com/tildejustin/custom-map-resetter",
-            "modrinth": "https://modrinth.com/mod/custom-map-resetter"
-        },
-        "working": true,
-        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
-    },
-    {
         "name": "ChromaHudFabric",
         "links": {
             "github": "https://github.com/CoolMineman/ChromaHudFabric",
@@ -84,13 +84,31 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
     {
+        "name": "COSTAR",
+        "links": {
+            "github": "https://github.com/tildejustin/costar",
+            "modrinth": "https://modrinth.com/mod/costar"
+        },
+        "working": true,
+        "versions": [ "1.11.2", "1.10.2", "1.9.4" ]
+    },
+    {
         "name": "CTM SpeedrunIGT Integration",
         "links": {
             "github": "https://github.com/tildejustin/ctm-srigt-integration",
             "modrinth": "https://modrinth.com/mod/ctm-speedrunigt-integration"
         },
         "working": true,
-        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
+        "name": "Custom Map Resetter",
+        "links": {
+            "github": "https://github.com/tildejustin/custom-map-resetter",
+            "modrinth": "https://modrinth.com/mod/custom-map-resetter"
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "Custom Skin Loader",
@@ -119,10 +137,10 @@ const mods = [
     {
         "name": "Dynamic FPS",
         "links": {
-            "github": "https://github.com/RedLime/Pre1.9-Dynamic-FPS",
+            "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/dynamic-fps",
         },
         "working": true,
-        "versions": [ "1.8.9", "1.7.10" ]
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "Ears",
@@ -132,6 +150,22 @@ const mods = [
         },
         "working": false,
         "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "EndFightMod",
+        "links": {
+            "github": "https://github.com/Slackow/EndFightMod---Fabric"
+        },
+        "working": true,
+        "versions": [ "1.8.9", "1.7.10" ]
+    },
+    {
+        "name": "EndFightMod",
+        "links": {
+            "github": "https://github.com/tildejustin/endfight-mod",
+        },
+        "working": true,
+        "versions": [ "1.3.2" ]
     },
     {
         "name": "Extended Hotbar",
@@ -150,6 +184,14 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Extra Options",
+        "links": {
+            "github": "https://github.com/tildejustin/extra-options",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "F3ServerInfo",
@@ -220,6 +262,15 @@ const mods = [
         "versions": [ "1.7.10", "1.8.9" ]
     },
     {
+        "name": "Gamma 5",
+        "links": {
+            "github": "https://github.com/tildejustin/gamma",
+            "modrinth": "https://modrinth.com/mod/gamma-five"
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9" ]
+    },
+    {
         "name": "Half-Heart Hardcore",
         "links": {
             "github": "https://github.com/tildejustin/half-heart-hardcore",
@@ -254,6 +305,40 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
+        "name": "LazyDFU",
+        "links": {
+            "github": "https://github.com/KingContaria/lazydfu",
+        },
+        "working": true,
+        "versions": [ "1.13.2" ]
+    },
+    {
+        "name": "Legacy Crash Fix",
+        "links": {
+            "github": "https://github.com/tildejustin/legacy-crash-fix"
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
+        "name": "Legacy Chunk Borders",
+        "links": {
+            "github": "https://github.com/tildejustin/legacy-chunk-borders",
+            "modrinth": "https://modrinth.com/mod/legacy-chunk-borders"
+        },
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
+        "name": "Legacy Debug Pause",
+        "links": {
+            "github": "https://github.com/tildejustin/legacy-debug-pause",
+            "modrinth": "https://modrinth.com/mod/legacy-debug-pause"
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "Legacy Elytras",
@@ -350,6 +435,14 @@ const mods = [
         "versions": [ "1.7.10", "1.8.9", "1.9.4", "1.10.2", "1.11.2" ]
     },
     {
+        "name": "MouseDelayFix-fabric",
+        "links": {
+            "github": "https://github.com/tildejustin/MouseDelayFix-fabric",
+        },
+        "working": true,
+        "versions": [ "1.10.2", "1.9.4", "1.8.9" ]
+    },
+    {
         "name": "NextSpring",
         "links": {
             "github": "https://github.com/Nova-Committee/NextSpring/tree/Fabric-Legacy/1.8.9",
@@ -357,6 +450,15 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.12.2", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
+        "name": "NNBSP Fix",
+        "links": {
+            "github": "https://github.com/tildejustin/nnbsp-fix",
+            "modrinth": "https://modrinth.com/mod/nnbsp-fix"
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "Modern KeyBinding",
@@ -429,18 +531,11 @@ const mods = [
     {
         "name": "Optifabric",
         "links": {
-            "github": "https://github.com/RedLime/OptiFabric-Pre1.9",
+            "github": "https://github.com/tildejustin/optifabric",
+            "modrinth": "https://modrinth.com/mod/legacy-optifabric"
         },
         "working": true,
-        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
-    },
-    {
-        "name": "Optifabric",
-        "links": {
-            "github": "https://github.com/tildejustin/OptiFabric-1.0-1.7"
-        },
-        "working": true,
-        "versions": [ "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "Punch 2 Prime",
@@ -501,7 +596,7 @@ const mods = [
             "modrinth": "https://modrinth.com/mod/SpeedRunIGT"
         },
         "working": true,
-        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "StandardSettings",
@@ -509,7 +604,15 @@ const mods = [
             "github": "https://github.com/KingContaria/StandardSettings",
         },
         "working": true,
-        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
+        "name": "State Output",
+        "links": {
+            "github": "https://github.com/tildejustin/state-output",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
         "name": "StatsPerWorld",
@@ -577,6 +680,14 @@ const mods = [
         "working": true,
         "versions": [ "1.6.4" ]
     },
+    {
+        "name": "OptiFine Unbound Zoom Fix",
+        "links": {
+            "github": "https://github.com/tildejustin/zoom-fix",
+        },
+        "working": true,
+        "versions": [ "1.7.10" ]
+    }
 ];
 
 // Get all listed versions, sort them then remove duplicates
