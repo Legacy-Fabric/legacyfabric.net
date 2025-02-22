@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Legacy Fabric - Downloads</title>
+
+    <meta property="og:site_name" content="Legacy Fabric - Usage">
+    <meta property="og:title" content="Legacy Fabric">
+    <meta property="og:url" content="https://legacyfabric.net/downloads.html">
+    <meta property="og:image" content="https://legacyfabric.net/res/img/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:description" content="The home of legacy version support for Fabric.">
+
+    <link href="res/css/main.css" type="text/css" rel="stylesheet">
+    <link href="res/css/downloads.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark-dimmed.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/gradle.min.js"></script>
+</head>
+<body onload="loadVersions(); showVersion('1.8.9');">
+    <nav>
+        <a class="main-nav" href="/">
+            <img src="res/img/logo.png" alt="" width="32" height="32">
+            Legacy Fabric
+        </a>
+        <a href="/downloads.html">Downloads</a>
+        <a href="/usage.html">Usage</a>
+        <a href="/mods.html">Mods</a>
+        <a href="https://github.com/Legacy-Fabric/">Source</a>
+        <a href="/discord">Discord</a>
+        <a href="https://status.legacyfabric.net">Status</a>
+    </nav>
+    <div class="page-content">
+        <label for="version-select">Minecraft Version:</label>
+        <select id="version-select" onchange="showVersion(this.value);"></select>
+
+        <h3>build.gradle</h3>
+        <div name="code">
+            <pre><code class="gradle hljs"><span class="hljs-keyword">dependencies</span> {
+    minecraft <span class="hljs-string" id="full-version">"com.mojang:minecraft:{minecraft_version}"</span>
+    mappings <span class="hljs-string" id="full-mapping">"net.legacyfabric:yarn:{mappings_version}:v2"</span>
+    modImplementation <span class="hljs-string" id="full-loader">"net.fabricmc:fabric-loader:{loader_version}"</span>
+    <span id="full-api-section" hidden>
+    // Legacy-Fabric API
+    modImplementation <span class="hljs-string" id="full-api">"net.legacyfabric.legacy-fabric-api:legacy-fabric-api:{api_version}"</span>
+    </span>
+}</code></pre>
+        </div>
+        <h3>gradle.properties</h3>
+        <div name="code">
+            <pre><code class="properties hljs">    <span class="hljs-attr">minecraft_version</span>=<span class="hljs-string" id="properties-version">{minecraft_version}</span>
+    <span class="hljs-attr">yarn_build</span>=<span class="hljs-string" id="properties-mapping">{mappings_build}</span>
+    <span class="hljs-attr">loader_version</span>=<span class="hljs-string" id="properties-loader">{loader_version}</span>
+    <span id="properties-api-section" hidden><span class="hljs-attr">fabric_version</span>=<span class="hljs-string" id="properties-api">{api_version}</span></span>
+</code></pre>
+        </div>
+    </div>
+</body>
+<script>
+    const fallbackMapping = "551";
+    const fallbackLoader = "0.16.10";
+    const fallbackApi = "1.11.1";
+    const fallbackSupportedApi = ["1.12.2","1.11.2","1.10.2","1.9.4","1.8.9","1.8","1.7.10","1.6.4"];
+
+    const emptyVersionInfos = {
+        loader: {
+            maven: "net.fabricmc:fabric-loader:" + fallbackLoader,
+            version: fallbackLoader,
+        },
+        mappings: {
+            build: "{mappings_build}",
+            maven: "net.legacyfabric:yarn:{mappings_version}",
+            version: "{mappings_version}",
+        }
+    };
+
+    const defaultVersionInfos = {
+        loader: {
+            maven: "net.fabricmc:fabric-loader:" + fallbackLoader,
+            version: fallbackLoader,
+        },
+        mappings: {
+            build: fallbackMapping,
+            maven: "net.legacyfabric:yarn:",
+            version: "",
+        }
+    };
+
+    function loadVersions() {
+        fetch("https://meta.legacyfabric.net/v1/versions/game")
+        .then(function(response) {
+            return response.json();
+        }).then(function(json) {
+            let newHtml = "";
+
+            for (const versionData of json) {
+                const version = versionData.version;
+
+                const selected = version === "1.8.9" ? " selected" : "";
+                newHtml += `<option value="${version}" ${selected}>${version}</option>`;
+            }
+
+            document.getElementById("version-select").innerHTML = newHtml;
+        }).catch(function(error) {
+            console.error("Couldn't retrieve version list", error);
+        });
+    }
+
+    function renderLoaderAndMappings(versionInfos) {
+        document.getElementById("full-mapping").innerHTML = '"' + versionInfos.mappings.maven + ':v2"';
+        document.getElementById("full-loader").innerHTML = '"' + versionInfos.loader.maven + '"';
+
+        document.getElementById("properties-mapping").innerHTML = versionInfos.mappings.build;
+        document.getElementById("properties-loader").innerHTML = versionInfos.loader.version;
+    }
+
+    function renderApi(apiVersion) {
+        if (apiVersion != null) {
+            document.getElementById("full-api-section").hidden = false;
+            document.getElementById("properties-api-section").hidden = false;
+            document.getElementById("full-api").innerHTML = "net.legacyfabric.legacy-fabric-api:legacy-fabric-api:" + apiVersion;
+            document.getElementById("properties-api").innerHTML = apiVersion;
+        } else {
+            document.getElementById("full-api-section").hidden = true;
+            document.getElementById("properties-api-section").hidden = true;
+        }
+    }
+
+    function showVersion(version) {
+        document.getElementById("full-version").innerHTML = '"com.mojang:minecraft:' + version + '"';
+        document.getElementById("properties-version").innerHTML = version;
+        renderLoaderAndMappings(emptyVersionInfos);
+
+        if (fallbackSupportedApi.includes(version)) {
+            renderApi(fallbackApi + "+" + version);
+        } else {
+            renderApi(null);
+        }
+
+        fetch("https://meta.legacyfabric.net/v1/versions/loader/" + version)
+        .then(function(response) {
+            return response.json();
+        }).then(function(json) {
+            if (json.length > 0) {
+                const versionInfos = json[0];
+
+                renderLoaderAndMappings(versionInfos);
+            }
+        }).catch(function(error) {
+            console.error("Couldn't retrieve mappings and loader list, using fallbacks", error);
+
+            const fallbackMappingsVersion = version + "+build." + defaultVersionInfos.mappings.build;
+
+            renderLoaderAndMappings({
+                ...defaultVersionInfos,
+                mappings: {
+                    ...defaultVersionInfos.mappings,
+                    maven: defaultVersionInfos.mappings.maven + fallbackMappingsVersion,
+                    version: fallbackMappingsVersion,
+                }
+            })
+        });
+
+        fetch("https://api.modrinth.com/v2/project/legacy-fabric-api/version")
+            .then(function(response) {
+                return response.json();
+            }).then(function(json) {
+            const filtered = json.filter(function(apiVersion) {
+                return apiVersion.game_versions.includes(version);
+            });
+
+            if (filtered.length > 0) {
+                renderApi(filtered[0].version_number + "+" + version);
+            }
+        }).catch(function(error) {
+            console.error("Couldn't retrieve api version list", error);
+        })
+    }
+</script>
+</html>
