@@ -220,6 +220,15 @@ const mods = [
         "versions": [ "1.12.2", "1.8.9", "1.7.10" ]
     },
     {
+        "name": "Fleecifer",
+        "links": {
+            "github": "https://github.com/mclegoman/fleecifer",
+            "modrinth": "https://modrinth.com/mod/fleecifer"
+        },
+        "working": true,
+        "versions": [ "1.12.2" ]
+    },
+    {
         "name": "FOV Effects Scale",
         "links": {
             "github": "https://github.com/KingContaria/Fov-Effects-Scale-Mod",
@@ -395,7 +404,8 @@ const mods = [
     {
         "name": "Loafy",
         "links": {
-            "github": "https://github.com/MCLegoMan/loafy",
+            "github": "https://github.com/mclegoman/loafy",
+            "modrinth": "https://modrinth.com/mod/loafy"
         },
         "working": true,
         "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.4.6", "1.4.5", "1.4.4", "1.4.3", "1.4.2", "1.4.1", "1.4.0", "1.3.2" ]
