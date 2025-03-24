@@ -22,6 +22,7 @@
             Legacy Fabric
         </a>
         <a href="/downloads.html">Downloads</a>
+        <a href="/usage.html">Usage</a>
         <a href="/mods.html">Mods</a>
         <a href="https://github.com/Legacy-Fabric/">Source</a>
         <a href="/discord">Discord</a>
@@ -35,11 +36,13 @@
             <a href="https://maven.legacyfabric.net/net/legacyfabric/fabric-installer/0.11.1/fabric-installer-0.11.1.exe" id="installer-exe"><button class="download-button">Download .exe <br> (for windows)</button></a>
             <a href="https://maven.legacyfabric.net/net/legacyfabric/fabric-installer/0.11.1/fabric-installer-0.11.1.jar" id="installer-jar"><button class="download-button">Download .jar <br> (universal)</button></a>
             <a href="https://github.com/Legacy-Fabric/multimc-instance-creator/releases"><button class="download-button">MultiMC <br> instances</button></a>
+        </div>
+    </div>
 </body>
 <script>
-    var fallback = "0.11.1"
+    const fallback = "0.11.1"
     function setLatestMeta() {
-        var latest
+        let latest
         fetch("https://meta.legacyfabric.net/v2/versions/installer")
         .then(function(response) {
             return response.json()
