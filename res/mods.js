@@ -229,6 +229,14 @@ const mods = [
         "versions": [ "1.12.2" ]
     },
     {
+        "name": "Font Fixer",
+        "links": {
+            "modrinth": "https://modrinth.com/mod/font-fixer",
+        },
+        "working": true,
+        "versions": [ "1.3.2" ]
+    },
+    {
         "name": "FOV Effects Scale",
         "links": {
             "github": "https://github.com/KingContaria/Fov-Effects-Scale-Mod",
