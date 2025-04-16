@@ -401,6 +401,15 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
     {
+        "name": "Legacy Visible Barrier",
+        "links": {
+            "github": "https://github.com/metaconscious/legacy-visible-barrier",
+            "modrinth": "https://modrinth.com/mod/legacy-visible-barrier"
+        },
+        "working": true,
+        "versions": [ "1.8.9" ]
+    },
+    {
         "name": "LetMeSpeak",
         "links": {
             "github": "https://github.com/spacebytee/LetMeSpeak",
