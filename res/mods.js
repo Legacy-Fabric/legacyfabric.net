@@ -424,7 +424,7 @@ const mods = [
             "github": "https://github.com/VideoGameSmash12/Librarian",
             "modrinth": "https://modrinth.com/mod/librarian"
         },
-        "working": true
+        "working": true,
         "versions": [ "1.12.2", "1.13.2" ]
     },
     {
