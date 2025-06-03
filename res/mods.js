@@ -419,6 +419,15 @@ const mods = [
         "versions": [ "1.7.10", "1.8.9", "1.12.2" ]
     },
     {
+        "name": "Librarian",
+        "links": {
+            "github": "https://github.com/VideoGameSmash12/Librarian",
+            "modrinth": "https://modrinth.com/mod/librarian"
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.13.2" ]
+    },
+    {
         "name": "Loafy",
         "links": {
             "github": "https://github.com/mclegoman/loafy",
