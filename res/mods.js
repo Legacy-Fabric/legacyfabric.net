@@ -535,6 +535,7 @@ const mods = [
         "name": "No Recipe Book",
         "links": {
             "github": "https://github.com/Grayray75/NoRecipeBook",
+            "modrinth": "https://modrinth.com/mod/norecipebook"
         },
         "working": true,
         "versions": [ "1.13.2", "1.12.2" ]
@@ -572,6 +573,15 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
+    },
+    {
+        "name": "Phosphor-Legacy",
+        "links": {
+            "github": "https://github.com/Grayray75/phosphor-legacy",
+            "modrinth": "https://modrinth.com/mod/phosphor-legacy",
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.8.9" ]
     },
     {
         "name": "Punch 2 Prime",
