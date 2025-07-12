@@ -31,6 +31,7 @@
         <a href="https://status.legacyfabric.net">Status</a>
     </nav>
     <div class="page-content">
+        <h1>Latest Versions</h1>
         <label for="version-select">Minecraft Version:</label>
         <select id="version-select" onchange="showVersion(this.value);"></select>
 
@@ -39,11 +40,10 @@
             <pre><code class="gradle hljs"><span class="hljs-keyword">dependencies</span> {
     minecraft <span class="hljs-string" id="full-version">"com.mojang:minecraft:{minecraft_version}"</span>
     mappings <span class="hljs-string" id="full-mapping">"net.legacyfabric:yarn:{mappings_version}:v2"</span>
-    modImplementation <span class="hljs-string" id="full-loader">"net.fabricmc:fabric-loader:{loader_version}"</span>
-    <span id="full-api-section" hidden>
+    modImplementation <span class="hljs-string" id="full-loader">"net.fabricmc:fabric-loader:{loader_version}"</span><span id="full-api-section" hidden>
+
     // Legacy-Fabric API
-    modImplementation <span class="hljs-string" id="full-api">"net.legacyfabric.legacy-fabric-api:legacy-fabric-api:{api_version}"</span>
-    </span>
+    modImplementation <span class="hljs-string" id="full-api">"net.legacyfabric.legacy-fabric-api:legacy-fabric-api:{api_version}"</span></span>
 }</code></pre>
         </div>
         <h3>gradle.properties</h3>
@@ -51,7 +51,10 @@
             <pre><code class="properties hljs">    <span class="hljs-attr">minecraft_version</span>=<span class="hljs-string" id="properties-version">{minecraft_version}</span>
     <span class="hljs-attr">yarn_build</span>=<span class="hljs-string" id="properties-mapping">{mappings_build}</span>
     <span class="hljs-attr">loader_version</span>=<span class="hljs-string" id="properties-loader">{loader_version}</span>
-    <span id="properties-api-section" hidden><span class="hljs-attr">fabric_version</span>=<span class="hljs-string" id="properties-api">{api_version}</span></span>
+    <span class="hljs-attr">loom_version</span>=<span class="hljs-string" id="properties-loom">1.11-SNAPSHOT</span><span id="properties-api-section" hidden>
+
+    # Legacy Fabric API
+    <span class="hljs-attr">fabric_version</span>=<span class="hljs-string" id="properties-api">{api_version}</span></span>
 </code></pre>
         </div>
     </div>
