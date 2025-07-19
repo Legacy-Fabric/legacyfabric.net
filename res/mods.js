@@ -523,6 +523,16 @@ const mods = [
         "versions": [ "1.12.2", "1.8.9", "1.7.10" ]
     },
     {
+        "name": "NoExpensive",
+        "links": {
+            "github": "https://github.com/Enaium/fabric-mod-NoExpensive",
+            "modrinth": "https://modrinth.com/mod/noexpensive",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/noexpensive"
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
+    },
+    {
         "name": "No Paus",
         "links": {
             "github": "https://github.com/tildejustin/no-paus",
@@ -564,6 +574,16 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.12.2", "1.8.9" ]
+    },
+    {
+        "name": "One Key Miner",
+        "links": {
+            "github": "https://github.com/Enaium/fabric-mod-OneKeyMiner",
+            "modrinth": "https://modrinth.com/mod/onekeyminer",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/onekeyminer"
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
     },
     {
         "name": "Optifabric",
