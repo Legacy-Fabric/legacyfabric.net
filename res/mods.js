@@ -689,6 +689,16 @@ const mods = [
         "versions": [ "1.6.4", "1.5.2", "1.4.7", "1.3.2" ]
     },
     {
+        "name": "StorageBox for Fabric",
+        "links": {
+            "github": "https://github.com/PTOM76/storagebox-fabric",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/storagebox-fabric",
+            "modrinth": "https://modrinth.com/mod/storagebox-fabric",
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.8.9" ]
+    },
+    {
         "name": "Subtitles backport",
         "links": {
             "github": "https://github.com/YetAnotherMcModder/Subtitles-Backport",
