@@ -12,8 +12,51 @@
     max-width: 90%;
 }
 
-.instruction-container h2, h3, h4 {
-    margin-bottom: 0;
+/*.instruction-container h2, h3, h4 {*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+.dave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.select-container {
+    width: fit-content;
+
+    color: #abafcc;
+    padding: 0 8px;
+    text-align: center;
+    font-size: 16px;
+    font-family: system-ui;
+    font-weight: bold;
+    margin: 6px 2px;
+    transition-duration: 0.25s;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+}
+
+.download-instance {
+    background-color: #212529;
+    border: 2px #212529;
+    border-radius: 6px;
+
+    color: #abafcc;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-family: system-ui;
+    font-weight: bold;
+    margin: 6px 2px;
+    transition-duration: 0.25s;
+    cursor: pointer;
 }
 
 /* Download Buttons */
