@@ -29,18 +29,50 @@
         <a href="https://status.legacyfabric.net">Status</a>
     </nav>
     <div class="page-content">
+        <div id="instance-container">
+            <h2>Instances for MultiMC/PrismLauncher</h2>
+            <p>For MultiMC, PrismLauncher and their derivatives</p>
+            <div class="dave">
+                <div class="select-container">
+                    <div>
+                        <label for="version-select">Minecraft Version:</label>
+                        <select id="version-select" onchange="updateVersion(this.value);"></select>
+                    </div>
+                    <div>
+                        <label for="loader-select">Loader Version:</label>
+                        <select id="loader-select" onchange="updateLoader(this.value);"></select>
+                    </div>
+                </div>
+                <a id="instance-link" href="https://github.com/Legacy-Fabric/multimc-instance-creator/releases"><button class="download-instance">Download <br> instance</button></a>
+            </div>
+        </div>
         <!-- Installer -->
         <div id="installer-container">
-            <h2>Installers</h2>
-            <p>For the normal minecraft launcher and MultiMC</p>
+            <h2>Vanilla Launcher Installers</h2>
+            <p>For the normal minecraft launcher</p>
             <a href="https://maven.legacyfabric.net/net/legacyfabric/fabric-installer/0.11.1/fabric-installer-0.11.1.exe" id="installer-exe"><button class="download-button">Download .exe <br> (for windows)</button></a>
             <a href="https://maven.legacyfabric.net/net/legacyfabric/fabric-installer/0.11.1/fabric-installer-0.11.1.jar" id="installer-jar"><button class="download-button">Download .jar <br> (universal)</button></a>
-            <a href="https://github.com/Legacy-Fabric/multimc-instance-creator/releases"><button class="download-button">MultiMC <br> instances</button></a>
         </div>
     </div>
 </body>
 <script>
     const fallback = "0.11.1"
+    const versionFallback = "1.8.9";
+    const loaderFallback = "0.16.14";
+
+    let currentVersion = versionFallback;
+    let currentLoader = loaderFallback;
+
+    function updateVersion(version) {
+        currentVersion = version;
+        document.getElementById("instance-link").href = "https://meta.legacyfabric.net/v2/versions/loader/" + currentVersion + "/" + currentLoader + "/instance/zip"
+    }
+
+    function updateLoader(loader) {
+        currentLoader = loader;
+        document.getElementById("instance-link").href = "https://meta.legacyfabric.net/v2/versions/loader/" + currentVersion + "/" + currentLoader + "/instance/zip"
+    }
+
     function setLatestMeta() {
         let latest
         fetch("https://meta.legacyfabric.net/v2/versions/installer")
@@ -59,6 +91,45 @@
             document.getElementById("installer-exe").href = "https://maven.legacyfabric.net/net/legacyfabric/fabric-installer/" + latest + "/fabric-installer-" + latest + ".exe"
             document.getElementById("installer-jar").href = "https://maven.legacyfabric.net/net/legacyfabric/fabric-installer/" + latest + "/fabric-installer-" + latest + ".jar"
         })
+
+        fetch("https://meta.legacyfabric.net/v1/versions/game")
+            .then(function(response) {
+                return response.json();
+            }).then(function(json) {
+            let newHtml = "";
+
+            for (const versionData of json) {
+                const version = versionData.version;
+
+                const selected = version === "1.8.9" ? " selected" : "";
+                if (selected) updateVersion(version);
+                newHtml += `<option value="${version}" ${selected}>${version}</option>`;
+            }
+
+            document.getElementById("version-select").innerHTML = newHtml;
+        }).catch(function(error) {
+            console.error("Couldn't retrieve version list", error);
+        });
+
+        fetch("https://meta.legacyfabric.net/v1/versions/loader")
+            .then(function(response) {
+                return response.json();
+            }).then(function(json) {
+            let newHtml = "";
+
+            let selected = true;
+            for (const versionData of json) {
+                const version = versionData.version;
+
+                if (selected) updateLoader(version);
+                newHtml += `<option value="${version}" ${selected}>${version}</option>`;
+                selected = false;
+            }
+
+            document.getElementById("loader-select").innerHTML = newHtml;
+        }).catch(function(error) {
+            console.error("Couldn't retrieve loader list", error);
+        });
     }
     setLatestMeta()
 </script>
