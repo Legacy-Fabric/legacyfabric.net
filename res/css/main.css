@@ -122,3 +122,18 @@ li::marker {
 pre {
     text-align: left;
 }
+
+.latest-version {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.latest-version div {
+    flex-direction: column;
+}
+
+.diff {
+    text-align: left;
+}
