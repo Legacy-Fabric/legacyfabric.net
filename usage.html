@@ -31,12 +31,14 @@
         <a href="https://status.legacyfabric.net">Status</a>
     </nav>
     <div class="page-content">
-        <h1>Latest Versions</h1>
+        <h1>Usage</h1>
         <label for="version-select">Minecraft Version:</label>
         <select id="version-select" onchange="showVersion(this.value);"></select>
 
-        <h3>build.gradle</h3>
-        <div name="code">
+        <h2>Latest Versions</h2>
+        <div class="latest-version">
+            <div name="code">
+                <h3>build.gradle</h3>
             <pre><code class="gradle hljs"><span class="hljs-keyword">dependencies</span> {
     minecraft <span class="hljs-string" id="full-version">"com.mojang:minecraft:{minecraft_version}"</span>
     mappings <span class="hljs-string" id="full-mapping">"net.legacyfabric:yarn:{mappings_version}:v2"</span>
@@ -45,9 +47,9 @@
     // Legacy-Fabric API
     modImplementation <span class="hljs-string" id="full-api">"net.legacyfabric.legacy-fabric-api:legacy-fabric-api:{api_version}"</span></span>
 }</code></pre>
-        </div>
-        <h3>gradle.properties</h3>
-        <div name="code">
+            </div>
+            <div name="code">
+                <h3>gradle.properties</h3>
             <pre><code class="properties hljs">    <span class="hljs-attr">minecraft_version</span>=<span class="hljs-string" id="properties-version">{minecraft_version}</span>
     <span class="hljs-attr">yarn_build</span>=<span class="hljs-string" id="properties-mapping">{mappings_build}</span>
     <span class="hljs-attr">loader_version</span>=<span class="hljs-string" id="properties-loader">{loader_version}</span>
@@ -56,6 +58,23 @@
     # Legacy Fabric API
     <span class="hljs-attr">fabric_version</span>=<span class="hljs-string" id="properties-api">{api_version}</span></span>
 </code></pre>
+            </div>
+        </div>
+
+        <h2>Mappings Diff</h2>
+        <br>
+        <div class="diff">
+            <label for="mapping-select-1">From Mappings Build:</label>
+            <select id="mapping-select-1" onchange="updateFromMappings(this.value);"></select>
+            <br>
+            <label for="mapping-select-2">To Mappings Build:</label>
+            <select id="mapping-select-2" onchange="updateToMappings(this.value);"></select>
+            <h3>Classes</h3>
+            <div id="diff-classes"></div>
+            <h3>Fields</h3>
+            <div id="diff-fields"></div>
+            <h3>Methods</h3>
+            <div id="diff-methods"></div>
         </div>
     </div>
 </body>
@@ -88,6 +107,9 @@
             version: "",
         }
     };
+
+    let fromMappings = null;
+    let toMappings = null;
 
     function loadVersions() {
         fetch("https://meta.legacyfabric.net/v1/versions/game")
@@ -178,6 +200,107 @@
         }).catch(function(error) {
             console.error("Couldn't retrieve api version list", error);
         })
+
+        fetch("https://meta.legacyfabric.net/v2/versions/yarn/" + version)
+            .then(function(response) {
+                return response.json();
+            }).then(function (json) {
+                let newHtml = "";
+
+                for (const versionData of json) {
+                    newHtml += `<option value="${versionData.version}">${versionData.build}</option>`;
+                }
+
+                document.getElementById("mapping-select-1").innerHTML = newHtml;
+                document.getElementById("mapping-select-2").innerHTML = newHtml;
+                fromMappings = toMappings = json[0].version;
+            })
+            .catch(function(error) {
+                console.error("Couldn't retrieve yarn version list", error);
+            });
+    }
+
+    function renderDiff(diff) {
+        let classHtml = `<ul>`;
+
+        for (const classEntry of diff.classes) {
+            classHtml += `<li>${classEntry.source} -> ${classEntry.target}</li>`;
+        }
+        classHtml += "</ul>";
+        document.getElementById("diff-classes").innerHTML = classHtml;
+
+        let fieldHtml = ``;
+
+        const groupedFields = Object.groupBy(diff.fields, ({ owner }) => owner);
+
+        for (const [owner, fields] of Object.entries(groupedFields)) {
+            fieldHtml += `<h4>${owner}</h4>`;
+            fieldHtml += `<ul>`;
+            for (const field of fields) {
+                fieldHtml += `<li>${field.source} -> ${field.target}</li>`
+            }
+            fieldHtml += "</ul>";
+        }
+
+        document.getElementById("diff-fields").innerHTML = fieldHtml;
+
+        let methodHtml = ``;
+
+        const groupedMethods = Object.groupBy(diff.methods, ({owner}) => owner);
+        for (const [owner, methods] of Object.entries(groupedMethods)) {
+            methodHtml += `<h4>${owner}</h4>`;
+            methodHtml += `<ul>`;
+            for (const method of methods) {
+                methodHtml += `
+                <li>
+                    ${method.source} ${method.sourceDesc}<br>
+                    -> ${method.target} ${method.targetDesc}
+                </li>`
+            }
+            methodHtml += "</ul>";
+        }
+        document.getElementById("diff-methods").innerHTML = methodHtml;
+    }
+
+    function updateFromMappings(version) {
+        if (fromMappings === version) {
+            return;
+        }
+
+        fromMappings = version;
+
+        if (fromMappings === toMappings || toMappings === null) return;
+
+        fetch("https://meta.legacyfabric.net/v2/diff/" + fromMappings + "/" + toMappings)
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(json) {
+                renderDiff(json);
+            })
+            .catch(function(error) {
+                console.error("Couldn't retrieve diff", error);
+            });
+    }
+
+    function updateToMappings(version) {
+        if (toMappings === version) {
+            return;
+        }
+        toMappings = version;
+
+        if (fromMappings === toMappings || fromMappings === null) return;
+
+        fetch("https://meta.legacyfabric.net/v2/diff/" + fromMappings + "/" + toMappings)
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(json) {
+                renderDiff(json);
+            })
+            .catch(function(error) {
+                console.error("Couldn't retrieve diff", error);
+            });
     }
 </script>
 </html>
