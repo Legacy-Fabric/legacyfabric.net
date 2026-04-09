@@ -33,6 +33,16 @@ const mods = [
         "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4" ]
     },
     {
+        "name": "Authenticate",
+        "links": {
+            "github": "https://github.com/Enaium/fabric-mod-Authenticate",
+            "modrinth": "https://modrinth.com/mod/authenticate",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/authenticate"
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
+    },
+    {
         "name": "AutoGG",
         "links": {
             "modrinth": "https://modrinth.com/mod/autogg",
@@ -435,6 +445,16 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.4.6", "1.4.5", "1.4.4", "1.4.3", "1.4.2", "1.4.1", "1.4.0", "1.3.2" ]
+    },
+    {
+        "name": "MineConf",
+        "links": {
+            "github": "https://github.com/Enaium/fabric-mod-MineConf",
+            "modrinth": "https://modrinth.com/mod/mineconf",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mineconf"
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
     },
     {
         "name": "Missing Vanilla Recipes",
