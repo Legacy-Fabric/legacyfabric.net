@@ -587,6 +587,15 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
     {
+        "name": "Omnidirectional Movement",
+        "links": {
+            "github": "https://github.com/AvacadoWizard120/Omni",
+            "modrinth": "https://modrinth.com/mod/omnidirectional-movement",
+        },
+        "working": true,
+        "versions": ["1.3.2", "1.4.7", "1.5.2", "1.6.4", "1.7.10", "1.8.9", "1.10.2", "1.12.2", "1.13.2"]
+    },
+    {
         "name": "One Block At A Time",
         "links": {
             "github": "https://github.com/BleachDev/oneblock",
