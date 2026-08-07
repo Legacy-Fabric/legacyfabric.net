@@ -792,6 +792,15 @@ const mods = [
         },
         "working": true,
         "versions": [ "1.7.10" ]
+    },
+    {
+        "name": "Classic Caves",
+        "links": {
+            "github": "https://github.com/inboundbark/classiccaves/tree/1.8.9-fabric",
+            "modrinth": "https://modrinth.com/mod/classic-caves",
+        },
+        "working": true,
+        "versions": [ "1.8.9" ]
     }
 ];
 
