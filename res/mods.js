@@ -286,7 +286,7 @@ const mods = [
             "github": "https://codeberg.org/fineless71/Freemetics"
         },
         "working": true,
-        "versions": [ "1.7.10", "1.8.9" ]
+        "versions": [ "1.8.9", "1.7.10" ]
     },
     {
         "name": "Gamma 5",
@@ -420,13 +420,22 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
     {
+        "name": "legacy-lwjgl3",
+        "links": {
+            "github": "https://github.com/moehreag/legacy-lwjgl3",
+            "modrinth": "https://modrinth.com/mod/moehreag-legacy-lwjgl3",
+        },
+        "working": true,
+        "versions": [ "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9" ]
+    },
+    {
         "name": "LetMeSpeak",
         "links": {
             "github": "https://github.com/spacebytee/LetMeSpeak",
             "modrinth": "https://modrinth.com/mod/letmespeak",
         },
         "working": true,
-        "versions": [ "1.7.10", "1.8.9", "1.12.2" ]
+        "versions": [ "1.12.2", "1.8.9", "1.7.10" ]
     },
     {
         "name": "Librarian",
@@ -435,7 +444,7 @@ const mods = [
             "modrinth": "https://modrinth.com/mod/librarian"
         },
         "working": true,
-        "versions": [ "1.12.2", "1.13.2" ]
+        "versions": [ "1.13.2", "1.12.2" ]
     },
     {
         "name": "Loafy",
@@ -488,7 +497,7 @@ const mods = [
             "github": "https://codeberg.org/fineless71/MopMenu"
         },
         "working": true,
-        "versions": [ "1.7.10", "1.8.9", "1.9.4", "1.10.2", "1.11.2" ]
+        "versions": [ "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10" ]
     },
     {
         "name": "MouseDelayFix-fabric",
@@ -523,7 +532,7 @@ const mods = [
             "modrinth": "https://modrinth.com/mod/modernkeybinding"
         },
         "working": true,
-        "versions": [ "1.7.10", "1.8.9" ]
+        "versions": [ "1.8.9", "1.7.10" ]
     },
     {
         "name": "No More Bleeding Sheep",
