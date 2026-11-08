@@ -761,6 +761,16 @@ const mods = [
         "versions": [ "1.8.9" ]
     },
     {
+        "name": "UnblockBannedServers",
+        "links": {
+            "github": "https://github.com/nomadanarchy/UnblockBannedServers",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/unblockbannedservers",
+            "modrinth": "https://modrinth.com/mod/unblockbannedservers",
+        },
+        "working": true,
+        "versions": [ "1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4" ]
+    },
+    {
         "name": "Where-Is-My-Stuff",
         "links": {
             "github": "https://github.com/MaheEvil/Where-Is-My-Stuff",
